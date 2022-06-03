@@ -9,6 +9,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        projectPath:
+          - Jukebox
         targetPlatform:
           # - StandaloneOSX # Build a macOS standalone (Intel 64-bit).
           # - StandaloneWindows # Build a Windows standalone.
@@ -32,6 +34,7 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
+          projectPath: ${{ matrix.projectPath }}
       - uses: actions/upload-artifact@v2
         with:
           name: Build-${{ matrix.targetPlatform }}
