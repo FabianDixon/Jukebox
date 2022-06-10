@@ -8,7 +8,10 @@ public class AddRoom : MonoBehaviour
 
     void Start()
     {
-        templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
-        templates.rooms.Add(this.gameObject);
+        if (GameObject.FindGameObjectWithTag("Rooms") != null)
+        {
+            templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
+            templates.rooms.Add(this.gameObject);
+        }
     }
 }
