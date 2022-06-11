@@ -8,24 +8,24 @@ public class ResourceBar : MonoBehaviour
     [SerializeField]
     private Slider slider;
 
-    void Update()
-    {
-        UpdateSlider();
-    }
+    //void update()
+    //{
+    //    updateslider();
+    //}
 
-    public void UpdateSlider()
-    {
-        if (slider.value > 0)
-        {
-            slider.fillRect.anchorMin = new Vector2(0.5f, 0);
-            slider.fillRect.anchorMax = new Vector2(slider.handleRect.anchorMin.x, 1);
-        }
-        else
-        {
-            slider.fillRect.anchorMin = new Vector2(slider.handleRect.anchorMin.x, 0);
-            slider.fillRect.anchorMax = new Vector2(0.5f, 1);
-        }
-    }
+    //public void updateslider()
+    //{
+    //    if (slider.value > 0)
+    //    {
+    //        slider.fillrect.anchormin = new vector2(0.5f, 0);
+    //        slider.fillrect.anchormax = new vector2(slider.handlerect.anchormin.x, 1);
+    //    }
+    //    else
+    //    {
+    //        slider.fillrect.anchormin = new vector2(slider.handlerect.anchormin.x, 0);
+    //        slider.fillrect.anchormax = new vector2(0.5f, 1);
+    //    }
+    //}
 
     public void SetValue(float resource)
     {

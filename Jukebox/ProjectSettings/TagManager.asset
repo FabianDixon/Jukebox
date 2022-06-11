@@ -8,6 +8,11 @@ TagManager:
   - Rooms
   - Hearts
   - UI
+  - Weapon_UI
+  - forteUI
+  - pianoUI
+  - activeItemUI
+  - consumableUI
   layers:
   - Default
   - TransparentFX

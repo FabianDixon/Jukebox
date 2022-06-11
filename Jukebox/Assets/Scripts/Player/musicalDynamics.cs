@@ -28,14 +28,17 @@ public class musicalDynamics : MonoBehaviour
     private bool mezzo_piano = false;
     private bool defaultValues = false;
 
-    private ResourceBar scaleUI;
+    private ResourceBar forteUI;
+    private ResourceBar pianoUI;
 
     void Start()
     {
-        scaleUI = GameObject.FindGameObjectWithTag("mDynamicsUI").GetComponent<ResourceBar>();
-        if (scaleUI != null)
+        forteUI = GameObject.FindGameObjectWithTag("forteUI").GetComponent<ResourceBar>();
+        pianoUI = GameObject.FindGameObjectWithTag("pianoUI").GetComponent<ResourceBar>();
+        if (forteUI != null && pianoUI != null)
         {
-            scaleUI.SetValue(dynamicScale);
+            forteUI.SetValue(dynamicScale);
+            pianoUI.SetValue(dynamicScale);
         }
     }
 
@@ -62,9 +65,10 @@ public class musicalDynamics : MonoBehaviour
             moveSpeedModifier = 1f;
 
             dynamicScale = 0f;
-            if (scaleUI != null)
+            if (forteUI != null && pianoUI != null)
             {
-                scaleUI.SetValue(dynamicScale);
+                forteUI.SetValue(dynamicScale);
+                pianoUI.SetValue(dynamicScale);
             }
             defaultValues = true;
         }
@@ -118,9 +122,16 @@ public class musicalDynamics : MonoBehaviour
         {
             dynamicScale -= charge;
         }
-        if (scaleUI != null)
+        if (forteUI != null && pianoUI != null)
         {
-            scaleUI.SetValue(dynamicScale);
+            if (crescendo == true)
+            {
+                forteUI.SetValue(dynamicScale);
+            }
+            else if (diminuendo == true)
+            {
+                pianoUI.SetValue(-dynamicScale);
+            } 
         }
     }
 
@@ -222,9 +233,10 @@ public class musicalDynamics : MonoBehaviour
         moveSpeedModifier = 1f;
 
         dynamicScale = 0f;
-        if (scaleUI != null)
+        if (forteUI != null && pianoUI != null)
         {
-            scaleUI.SetValue(dynamicScale);
+            forteUI.SetValue(dynamicScale);
+            pianoUI.SetValue(dynamicScale);
         }
         defaultValues = true;
         forte = false;

@@ -17,7 +17,14 @@ public class PickUp : MonoBehaviour
 
         itemSprite = this.gameObject.GetComponent<SpriteRenderer>();
 
-        itemUI = GameObject.FindGameObjectWithTag("Item_Ui").GetComponent<Image>();
+        if (this.gameObject.tag == "ActiveItem")
+        {
+            itemUI = GameObject.FindGameObjectWithTag("activeItemUI").GetComponent<Image>();
+        }
+        else if (this.gameObject.tag == "Consumable")
+        {
+            itemUI = GameObject.FindGameObjectWithTag("consumableUI").GetComponent<Image>();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D trigger)
