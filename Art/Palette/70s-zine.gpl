@@ -1,0 +1,15 @@
+GIMP Palette
+#Palette Name: 70s Zine
+#Description: A collection of colours used in early print media; sampled from various examples here: http://oa.letterformarchive.org/<br /><br />The colours mostly rely on a black/red/orange/white scheme, but I brewed up companion cyan-greens which bridge across the blues/yellows.<br /><br />For best results, use in big, punchy blocks.
+#Colors: 11
+30	22	16	1e1610
+211	173	139	d3ad8b
+252	206	141	fcce8d
+243	237	227	f3ede3
+249	81	66	f95142
+255	143	70	ff8f46
+242	187	78	f2bb4e
+132	163	165	84a3a5
+77	124	113	4d7c71
+64	89	135	405987
+31	47	73	1f2f49
