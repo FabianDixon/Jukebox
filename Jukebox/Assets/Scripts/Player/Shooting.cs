@@ -49,25 +49,25 @@ public class Shooting : MonoBehaviour
         {
             direction = 1;
             Shoot(1);
-            shoot = 0f;
+            shoot = 0.1f;
         }
         else if (Input.GetKeyDown("down"))
         {
             direction = 2;
             Shoot(2);
-            shoot = 0.5f;
+            shoot = 0.6f;
         }
         else if (Input.GetKeyDown("left"))
         {
             direction = 3;
             Shoot(3);
-            shoot = 0.75f;
+            shoot = 0.85f;
         }
         else if (Input.GetKeyDown("up"))
         {
             direction = 4;
             Shoot(4);
-            shoot = 1f;
+            shoot = 1.1f;
         }
 
         animator.SetFloat("Shoot", shoot);
@@ -83,27 +83,27 @@ public class Shooting : MonoBehaviour
 
         animator.SetTrigger("isShot");
         GameObject projectile = Instantiate(BulletPrefab, firePoint.position, firePoint.rotation);
-        bullet = projectile.GetComponent<Transform>();
-        var rotationVector = bullet.rotation.eulerAngles;
+        //bullet = projectile.GetComponent<Transform>();
+        //var rotationVector = bullet.rotation.eulerAngles;
 
-        if (FacingDir == 3)
-        {
-            rotationVector.z = 90;
-        }
-        else if (FacingDir == 1)
-        {
-            rotationVector.z = 270;
-        }
-        else if (FacingDir == 2)
-        {
-            rotationVector.z = 180;
-        }
-        else if (FacingDir == 4)
-        {
-            rotationVector.z = 0;
-        }
+        //if (FacingDir == 3)
+        //{
+        //    rotationVector.z = 90;
+        //}
+        //else if (FacingDir == 1)
+        //{
+        //    rotationVector.z = 270;
+        //}
+        //else if (FacingDir == 2)
+        //{
+        //    rotationVector.z = 180;
+        //}
+        //else if (FacingDir == 4)
+        //{
+        //    rotationVector.z = 0;
+        //}
 
-        bullet.rotation = Quaternion.Euler(rotationVector);
+        //bullet.rotation = Quaternion.Euler(rotationVector);
     }
 
     public void GainDmg(float extraDmg)

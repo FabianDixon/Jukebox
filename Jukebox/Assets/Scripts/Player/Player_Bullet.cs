@@ -41,6 +41,7 @@ public class Player_Bullet : MonoBehaviour
         else if (shooting.direction == 2)
         {
             target = new Vector2(transform.position.x, transform.position.y - distance);
+            this.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 11;
         }
         else if (shooting.direction == 3)
         {
