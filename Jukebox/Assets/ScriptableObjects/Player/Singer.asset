@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Singer
   m_EditorClassIdentifier: 
   health: 3
-  speed: 10
+  speed: 50
   damage: 2
   projectileDistance: 10
   projectileSpeed: 1

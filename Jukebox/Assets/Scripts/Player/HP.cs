@@ -79,11 +79,32 @@ public class HP : MonoBehaviour
             }
         }
 
-
         if (health <= 0) { 
             Die();
             EventManager.OnPlayerDeath();
         }
+
+        StartCoroutine(invincibilityAfterHit());
+    }
+
+    IEnumerator invincibilityAfterHit()
+    {
+        Collider2D hurtBox = this.gameObject.GetComponent<Collider2D>();
+        hurtBox.enabled = false;
+        SpriteRenderer selfImage = Self.GetComponent<SpriteRenderer>();
+        var tempColor = selfImage.color;
+        tempColor.a = 140f;
+        selfImage.color = tempColor;
+        yield return new WaitForSeconds(0.1f);
+        tempColor.a = 255f;
+        selfImage.color = tempColor;
+        yield return new WaitForSeconds(0.1f);
+        tempColor.a = 140f;
+        selfImage.color = tempColor;
+        yield return new WaitForSeconds(0.1f);
+        tempColor.a = 255f;
+        selfImage.color = tempColor;
+        hurtBox.enabled = true;
     }
 
     void Die() 

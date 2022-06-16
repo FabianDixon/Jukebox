@@ -1,0 +1,1260 @@
+fileFormatVersion: 2
+guid: 5af228932bff0864da4eeb532b938a16
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8426218194350639579
+    second: Character1_Mic_WalkSheet_0
+  - first:
+      213: 4312671516439056891
+    second: Character1_Mic_WalkSheet_1
+  - first:
+      213: -6888014737449572808
+    second: Character1_Mic_WalkSheet_2
+  - first:
+      213: -6304449638176310996
+    second: Character1_Mic_WalkSheet_3
+  - first:
+      213: 7480530874869607013
+    second: Character1_Mic_WalkSheet_4
+  - first:
+      213: -2384327200036922155
+    second: Character1_Mic_WalkSheet_5
+  - first:
+      213: 9149263491654337798
+    second: Character1_Mic_WalkSheet_6
+  - first:
+      213: -6951967237829231319
+    second: Character1_Mic_WalkSheet_7
+  - first:
+      213: 3747258238793246464
+    second: Character1_Mic_WalkSheet_8
+  - first:
+      213: 2703166463543369636
+    second: Character1_Mic_WalkSheet_9
+  - first:
+      213: 8692718704274235740
+    second: Character1_Mic_WalkSheet_10
+  - first:
+      213: -3347204426211149529
+    second: Character1_Mic_WalkSheet_11
+  - first:
+      213: 704179698621459050
+    second: Character1_Mic_WalkSheet_12
+  - first:
+      213: -493447735459678145
+    second: Character1_Mic_WalkSheet_13
+  - first:
+      213: -2490948931567232689
+    second: Character1_Mic_WalkSheet_14
+  - first:
+      213: 2909771333279509368
+    second: Character1_Mic_WalkSheet_15
+  - first:
+      213: -5068078667231332852
+    second: Character1_Mic_WalkSheet_16
+  - first:
+      213: -5480097059620411517
+    second: Character1_Mic_WalkSheet_17
+  - first:
+      213: -2222158623916905452
+    second: Character1_Mic_WalkSheet_18
+  - first:
+      213: -2699446910799064266
+    second: Character1_Mic_WalkSheet_19
+  - first:
+      213: -5350657911775291998
+    second: Character1_Mic_WalkSheet_20
+  - first:
+      213: -8586294862764837378
+    second: Character1_Mic_WalkSheet_21
+  - first:
+      213: -6093456615428572920
+    second: Character1_Mic_WalkSheet_22
+  - first:
+      213: 2017760673261667661
+    second: Character1_Mic_WalkSheet_23
+  - first:
+      213: 823186302985357653
+    second: Character1_Mic_WalkSheet_24
+  - first:
+      213: 6575637038236839892
+    second: Character1_Mic_WalkSheet_25
+  - first:
+      213: 7217478550242790781
+    second: Character1_Mic_WalkSheet_26
+  - first:
+      213: -4307190544770043229
+    second: Character1_Mic_WalkSheet_27
+  - first:
+      213: -2367014090591021771
+    second: Character1_Mic_WalkSheet_28
+  - first:
+      213: 2517663794058241531
+    second: Character1_Mic_WalkSheet_29
+  - first:
+      213: 7212972007582523764
+    second: Character1_Mic_WalkSheet_30
+  - first:
+      213: -8392623152181716341
+    second: Character1_Mic_WalkSheet_31
+  - first:
+      213: -8885325049085963267
+    second: Character1_Mic_WalkSheet_32
+  - first:
+      213: 6825861687620030383
+    second: Character1_Mic_WalkSheet_33
+  - first:
+      213: -2739829861651912106
+    second: Character1_Mic_WalkSheet_34
+  - first:
+      213: 4927179533579086386
+    second: Character1_Mic_WalkSheet_35
+  - first:
+      213: -9042665292583109098
+    second: Character1_Mic_WalkSheet_36
+  - first:
+      213: 3825921122118848536
+    second: Character1_Mic_WalkSheet_37
+  - first:
+      213: 3135065641597257102
+    second: Character1_Mic_WalkSheet_38
+  - first:
+      213: 4169433306394557211
+    second: Character1_Mic_WalkSheet_39
+  - first:
+      213: -4285787082702006948
+    second: Character1_Mic_WalkSheet_40
+  - first:
+      213: 2990645872092488366
+    second: Character1_Mic_WalkSheet_41
+  - first:
+      213: -4916607399603815991
+    second: Character1_Mic_WalkSheet_42
+  - first:
+      213: -7143322338381104356
+    second: Character1_Mic_WalkSheet_43
+  - first:
+      213: 7908898099226969676
+    second: Character1_Mic_WalkSheet_44
+  - first:
+      213: 6586193872144467428
+    second: Character1_Mic_WalkSheet_45
+  - first:
+      213: 6382839791089520284
+    second: Character1_Mic_WalkSheet_46
+  - first:
+      213: -5158450305828035596
+    second: Character1_Mic_WalkSheet_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1588
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd90432cdc0ffe470800000000000000
+      internalID: 8426218194350639579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1588
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf19b4a05efa9db30800000000000000
+      internalID: 4312671516439056891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1589
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836a9ae271bd860a0800000000000000
+      internalID: -6888014737449572808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1589
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29392cd4781288a0800000000000000
+      internalID: -6304449638176310996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1444
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ae1f7723f20d760800000000000000
+      internalID: 7480530874869607013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_5
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1444
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc5f755b0b29eed0800000000000000
+      internalID: -2384327200036922155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_6
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1445
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605c188bba6b8fe70800000000000000
+      internalID: 9149263491654337798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_7
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1445
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92df80b51a6a58f90800000000000000
+      internalID: -6951967237829231319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1300
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0076deca38fe00430800000000000000
+      internalID: 3747258238793246464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1300
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af504c9393938520800000000000000
+      internalID: 2703166463543369636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1301
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51e8a40b9db2a870800000000000000
+      internalID: 8692718704274235740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1301
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729b1110f475c81d0800000000000000
+      internalID: -3347204426211149529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1156
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6aaf5a74bfb5c900800000000000000
+      internalID: 704179698621459050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_13
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1156
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3874b426ebe629f0800000000000000
+      internalID: -493447735459678145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_14
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1157
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49db44f42f5e6dd0800000000000000
+      internalID: -2490948931567232689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_15
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1157
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b6db96c95916820800000000000000
+      internalID: 2909771333279509368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1012
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06f0f1dd419aa9b0800000000000000
+      internalID: -5068078667231332852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1012
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387a9a252c8c2f3b0800000000000000
+      internalID: -5480097059620411517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_18
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1013
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cacda418e4921e0800000000000000
+      internalID: -2222158623916905452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_19
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1013
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633dbcf3653a98ad0800000000000000
+      internalID: -2699446910799064266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 868
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5100e6af4aeb5b0800000000000000
+      internalID: -5350657911775291998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_21
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 868
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5f320805a57d880800000000000000
+      internalID: -8586294862764837378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_22
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 869
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80930272e71bf6ba0800000000000000
+      internalID: -6093456615428572920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_23
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 869
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45c38b44a6800c10800000000000000
+      internalID: 2017760673261667661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 724
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559c865c49b8c6b00800000000000000
+      internalID: 823186302985357653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 724
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df220c0c0b514b50800000000000000
+      internalID: 6575637038236839892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_26
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 725
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d09396082a92460800000000000000
+      internalID: 7217478550242790781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_27
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 725
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a27f0f1509c934c0800000000000000
+      internalID: -4307190544770043229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 580
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5355affb93da62fd0800000000000000
+      internalID: -2367014090591021771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_29
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 580
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf524bca1e980f220800000000000000
+      internalID: 2517663794058241531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_30
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 581
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471eace23df991460800000000000000
+      internalID: 7212972007582523764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_31
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 581
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a5d7885b9678b80800000000000000
+      internalID: -8392623152181716341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 436
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3d95fb1fbf0b480800000000000000
+      internalID: -8885325049085963267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_33
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 436
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf4a883a055abe50800000000000000
+      internalID: 6825861687620030383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_34
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 437
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65aea3fc14b2af9d0800000000000000
+      internalID: -2739829861651912106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_35
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 437
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a6e833eabd06440800000000000000
+      internalID: 4927179533579086386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_36
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 292
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e74d493dff18280800000000000000
+      internalID: -9042665292583109098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_37
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 292
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810de8e6df6681530800000000000000
+      internalID: 3825921122118848536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_38
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 293
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85cfea379df18b20800000000000000
+      internalID: 3135065641597257102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_39
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 293
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b7456608dccd930800000000000000
+      internalID: 4169433306394557211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_40
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 148
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55d698fa53d584c0800000000000000
+      internalID: -4285787082702006948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_41
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 148
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2af075398e08920800000000000000
+      internalID: 2990645872092488366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_42
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 149
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9be8e8e93b4cbb0800000000000000
+      internalID: -4916607399603815991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_43
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 149
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b7ea02e22dddc90800000000000000
+      internalID: -7143322338381104356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_44
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c468f290bec02cd60800000000000000
+      internalID: 7908898099226969676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_45
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 4
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5860b7e6cd66b50800000000000000
+      internalID: 6586193872144467428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_46
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 5
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e8e16e8f6649850800000000000000
+      internalID: 6382839791089520284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_WalkSheet_47
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 5
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f36d9907c08968b0800000000000000
+      internalID: -5158450305828035596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

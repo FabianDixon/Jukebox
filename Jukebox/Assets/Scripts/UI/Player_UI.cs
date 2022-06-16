@@ -8,7 +8,7 @@ public class Player_UI : MonoBehaviour
     {
         EventManager.spawnPlayerEvent += enable;
         DontDestroyOnLoad(this.gameObject);
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 
     void enable()

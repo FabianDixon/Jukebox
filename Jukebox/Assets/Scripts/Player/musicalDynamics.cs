@@ -40,6 +40,12 @@ public class musicalDynamics : MonoBehaviour
             forteUI.SetValue(dynamicScale);
             pianoUI.SetValue(dynamicScale);
         }
+
+        dmgModifier = 1f;
+        speedModifier = 1f;
+        sizeModifier = 1f;
+        rangeModifier = 1f;
+        moveSpeedModifier = 1f;
     }
 
     void Update()

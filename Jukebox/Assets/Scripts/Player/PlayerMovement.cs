@@ -41,20 +41,21 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         if (movement.x > 0)
         {
-            idle = 0f;
-        }else if (movement.x < 0)
+            idle = 0.1f;
+        }
+        else if (movement.x < 0)
         {
-            idle = 0.5f;
+            idle = 0.6f;
         }
 
         animator.SetFloat("Vertical", movement.y);
         if (movement.y > 0)
         {
-            idle = 0.75f;
+            idle = 0.85f;
         }
         else if (movement.y < 0)
         {
-            idle = 1f;
+            idle = 1.1f;
         }
 
         animator.SetFloat("idle", idle);
@@ -89,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (scene.buildIndex > 1)
         {
-            gameObject.GetComponent<Transform>().position = resetPosition;
+            this.gameObject.GetComponent<Transform>().position = resetPosition;
         }
     }
 }

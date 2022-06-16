@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: 9126c9b2ef0579849a5304135aaccb3b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3556198024620363970
+    second: Character1_Mic_IdleSheet_0
+  - first:
+      213: 6513973567699371089
+    second: Character1_Mic_IdleSheet_1
+  - first:
+      213: -2920551724261646044
+    second: Character1_Mic_IdleSheet_2
+  - first:
+      213: -7188442803182284763
+    second: Character1_Mic_IdleSheet_3
+  - first:
+      213: -6411777642170405731
+    second: Character1_Mic_IdleSheet_4
+  - first:
+      213: -5890748467996962067
+    second: Character1_Mic_IdleSheet_5
+  - first:
+      213: 5247061131825782636
+    second: Character1_Mic_IdleSheet_6
+  - first:
+      213: 6469663053387718410
+    second: Character1_Mic_IdleSheet_7
+  - first:
+      213: 3475880691125222890
+    second: Character1_Mic_IdleSheet_8
+  - first:
+      213: 5020991093069268323
+    second: Character1_Mic_IdleSheet_9
+  - first:
+      213: -8058704043380686753
+    second: Character1_Mic_IdleSheet_10
+  - first:
+      213: 4164310911937940115
+    second: Character1_Mic_IdleSheet_11
+  - first:
+      213: -3501455077807341819
+    second: Character1_Mic_IdleSheet_12
+  - first:
+      213: -4745514346988684901
+    second: Character1_Mic_IdleSheet_13
+  - first:
+      213: -7119448134614323173
+    second: Character1_Mic_IdleSheet_14
+  - first:
+      213: 8558650300668369377
+    second: Character1_Mic_IdleSheet_15
+  - first:
+      213: -125349489885319292
+    second: Character1_Mic_IdleSheet_16
+  - first:
+      213: 1495964580031626842
+    second: Character1_Mic_IdleSheet_17
+  - first:
+      213: -6019167328383881849
+    second: Character1_Mic_IdleSheet_18
+  - first:
+      213: -2894984606774039579
+    second: Character1_Mic_IdleSheet_19
+  - first:
+      213: 4814165130901266041
+    second: Character1_Mic_IdleSheet_20
+  - first:
+      213: 6039378628417728545
+    second: Character1_Mic_IdleSheet_21
+  - first:
+      213: 5903127168791070190
+    second: Character1_Mic_IdleSheet_22
+  - first:
+      213: -5787909731102930974
+    second: Character1_Mic_IdleSheet_23
+  - first:
+      213: -2397151531908498141
+    second: Character1_Mic_IdleSheet_24
+  - first:
+      213: 4712808848039039254
+    second: Character1_Mic_IdleSheet_25
+  - first:
+      213: -8450233394119709212
+    second: Character1_Mic_IdleSheet_26
+  - first:
+      213: 1899929130919007153
+    second: Character1_Mic_IdleSheet_27
+  - first:
+      213: -8495103128040085502
+    second: Character1_Mic_IdleSheet_28
+  - first:
+      213: 5372731129513910123
+    second: Character1_Mic_IdleSheet_29
+  - first:
+      213: -1239230460606742876
+    second: Character1_Mic_IdleSheet_30
+  - first:
+      213: -6967222738597187472
+    second: Character1_Mic_IdleSheet_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 1
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1084
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0517803472a5130800000000000000
+      internalID: 3556198024620363970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1084
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15441038278466a50800000000000000
+      internalID: 6513973567699371089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1084
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421ea373ead1877d0800000000000000
+      internalID: -2920551724261646044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1084
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5205b144b558d3c90800000000000000
+      internalID: -7188442803182284763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 940
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c24ab943ac407a0800000000000000
+      internalID: -6411777642170405731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_5
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 940
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de25dd79a7bdf3ea0800000000000000
+      internalID: -5890748467996962067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_6
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 940
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f1c3d9c4e41d840800000000000000
+      internalID: 5247061131825782636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_7
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 940
+        width: 27
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fd4a1f44cd8c950800000000000000
+      internalID: 6469663053387718410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 796
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed7824921fcc3030800000000000000
+      internalID: 3475880691125222890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 796
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3654bcafbc42ea540800000000000000
+      internalID: 5020991093069268323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 796
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f504a409e5bb92090800000000000000
+      internalID: -8058704043380686753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_11
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 796
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a085006ba9ac930800000000000000
+      internalID: 4164310911937940115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 652
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f3e428825586fc0800000000000000
+      internalID: -3501455077807341819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 652
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99383f18db842eb0800000000000000
+      internalID: -4745514346988684901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_14
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 652
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10fe7b54a3a23d90800000000000000
+      internalID: -7119448134614323173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_15
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 652
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9d0205a1f66c670800000000000000
+      internalID: 8558650300668369377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 508
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48feb969d4ba24ef0800000000000000
+      internalID: -125349489885319292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_17
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 508
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ef95d0cdbb2c410800000000000000
+      internalID: 1495964580031626842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_18
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 508
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78daa0ca43f977ca0800000000000000
+      internalID: -6019167328383881849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_19
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 508
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb6203a6d2f2d7d0800000000000000
+      internalID: -2894984606774039579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 364
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e11751ea95fc240800000000000000
+      internalID: 4814165130901266041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_21
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 364
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120bce25dde20d350800000000000000
+      internalID: 6039378628417728545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_22
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 364
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5cfb742ee1ce150800000000000000
+      internalID: 5903127168791070190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_23
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 364
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e74595e3c63dafa0800000000000000
+      internalID: -5787909731102930974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 220
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d7fc3e16b9bbed0800000000000000
+      internalID: -2397151531908498141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_25
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 220
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6115fa18da2476140800000000000000
+      internalID: 4712808848039039254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_26
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 220
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ede952df7dbaba80800000000000000
+      internalID: -8450233394119709212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_27
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 220
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b318d27a77ed5a10800000000000000
+      internalID: 1899929130919007153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_28
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 76
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2086cdac6b45b1a80800000000000000
+      internalID: -8495103128040085502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_29
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 76
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f1c501f76cf8a40800000000000000
+      internalID: 5372731129513910123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_30
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 76
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aef0b8367e5dcee0800000000000000
+      internalID: -1239230460606742876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Mic_IdleSheet_31
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 76
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070f3ea45d37f4f90800000000000000
+      internalID: -6967222738597187472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
