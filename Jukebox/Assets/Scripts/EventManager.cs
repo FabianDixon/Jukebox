@@ -13,7 +13,7 @@ public class EventManager : MonoBehaviour
     public static Action bossRoomClearEvent;
     public static Action GameOverEvent;
     public static Action useActiveItemEvent;
-
+    
     public static void activeItemUse()
     {
         useActiveItemEvent?.Invoke();

@@ -9,7 +9,8 @@ public class RoomEnabler : MonoBehaviour
 
     void Start()
     {
-        Parent = transform.parent;
+        Parent = transform.parent.parent.parent;
+        transform.parent = Parent;
     }
 
     void OnTriggerEnter2D(Collider2D trigger)
@@ -17,7 +18,8 @@ public class RoomEnabler : MonoBehaviour
         if (trigger.gameObject.tag == "Player")
         {
             int numChild = Parent.childCount;
-            Parent.GetChild(numChild-1).gameObject.SetActive(true);
+            Parent.GetChild(1).gameObject.SetActive(true);
         }
     }
+    
 }

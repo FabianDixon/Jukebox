@@ -10,6 +10,7 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject currentWeapon;
     public GameObject BulletPrefab;
+    private GameObject projectile;
 
     private SpriteRenderer weaponSprite;
     private Image weaponUI;
@@ -82,28 +83,27 @@ public class Shooting : MonoBehaviour
         bulletSize = dynamics.sizeModifier;      
 
         animator.SetTrigger("isShot");
-        GameObject projectile = Instantiate(BulletPrefab, firePoint.position, firePoint.rotation);
-        //bullet = projectile.GetComponent<Transform>();
-        //var rotationVector = bullet.rotation.eulerAngles;
-
-        //if (FacingDir == 3)
-        //{
-        //    rotationVector.z = 90;
-        //}
-        //else if (FacingDir == 1)
-        //{
-        //    rotationVector.z = 270;
-        //}
-        //else if (FacingDir == 2)
-        //{
-        //    rotationVector.z = 180;
-        //}
-        //else if (FacingDir == 4)
-        //{
-        //    rotationVector.z = 0;
-        //}
-
-        //bullet.rotation = Quaternion.Euler(rotationVector);
+        Vector3 firePointPos = firePoint.position;
+        if (FacingDir == 3)
+        {
+            firePointPos.x -= 10f; 
+            projectile = Instantiate(BulletPrefab, firePointPos, firePoint.rotation);
+        }
+        else if (FacingDir == 1)
+        {
+            firePointPos.x += 10f;
+            projectile = Instantiate(BulletPrefab, firePointPos, firePoint.rotation);
+        }
+        else if (FacingDir == 2)
+        {
+            firePointPos.y -= 4f;
+            projectile = Instantiate(BulletPrefab, firePointPos, firePoint.rotation);
+        }
+        else if (FacingDir == 4)
+        {
+            firePointPos.y += 4f; 
+            projectile = Instantiate(BulletPrefab, firePointPos, firePoint.rotation);
+        }
     }
 
     public void GainDmg(float extraDmg)

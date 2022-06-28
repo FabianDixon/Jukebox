@@ -5,6 +5,8 @@ using UnityEngine;
 public class CamMovement : MonoBehaviour
 {
     [SerializeField]
+    private Vector3 camChange;
+    [SerializeField]
     private Vector3 playerChange;
 
     [SerializeField]
@@ -34,20 +36,24 @@ public class CamMovement : MonoBehaviour
         switch (ID)
         {
             case 1:
-                transform.Translate(0, 30, 0);
-                playerChange = new Vector3(0,2,0);
-                break;
-            case 2:
-                transform.Translate(40, 0, 0);
-                playerChange = new Vector3(2, 0, 0);
-                break;
-            case 3:
-                transform.Translate(0, -30, 0);
-                playerChange = new Vector3(0, -2, 0);
+                camChange = new Vector3(0, 360, 0);
+                transform.Translate(camChange);
+                playerChange = new Vector3(0,100,0);
                 break;
             case 4:
-                transform.Translate(-40, 0, 0);
-                playerChange = new Vector3(-2, 0, 0);
+                camChange = new Vector3(640, 0, 0);
+                transform.Translate(camChange);
+                playerChange = new Vector3(120, 0, 0);
+                break;
+            case 2:
+                camChange = new Vector3(0, -360, 0);
+                transform.Translate(camChange);
+                playerChange = new Vector3(0, -100, 0);
+                break;
+            case 3:
+                camChange = new Vector3(-640, 0, 0);
+                transform.Translate(camChange);
+                playerChange = new Vector3(-120, 0, 0);
                 break;
             default:
                 break;

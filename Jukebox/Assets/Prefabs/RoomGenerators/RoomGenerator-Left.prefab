@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &734985112988743379
+--- !u!1 &79777651498126638
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6521810910071679637}
-  - component: {fileID: -5481494911143876336}
+  - component: {fileID: 5884652472726557032}
+  - component: {fileID: 4090831016846103277}
   m_Layer: 0
-  m_Name: RoomGenerator-Initial
+  m_Name: RoomGenerator-Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6521810910071679637
+--- !u!4 &5884652472726557032
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734985112988743379}
+  m_GameObject: {fileID: 79777651498126638}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6007599916504565376}
+  - {fileID: 1699336720999046948}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5481494911143876336
+--- !u!114 &4090831016846103277
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734985112988743379}
+  m_GameObject: {fileID: 79777651498126638}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b06cc54def4f8b469f0e23b7c3c236b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objects:
-  - {fileID: 128193852023544301, guid: 3414b14cb4c70b44f8d7df95c467adf1, type: 3}
---- !u!1 &4529313213837152582
+  - {fileID: 418886511247331281, guid: 34080ec4e95cb8f4e8bbe18a0bb5b377, type: 3}
+--- !u!1 &6775035086321874611
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6007599916504565376}
+  - component: {fileID: 1699336720999046948}
   m_Layer: 0
   m_Name: RoomSpawnDestroyer
   m_TagString: SpawnPointDestroyer
@@ -62,17 +62,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6007599916504565376
+--- !u!4 &1699336720999046948
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4529313213837152582}
+  m_GameObject: {fileID: 6775035086321874611}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 6521810910071679637}
+  m_Father: {fileID: 5884652472726557032}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

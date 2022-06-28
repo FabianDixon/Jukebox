@@ -13,6 +13,10 @@ TagManager:
   - pianoUI
   - activeItemUI
   - consumableUI
+  - RoomSpawnPoint
+  - EnemyCounter
+  - initialRoom
+  - SpawnPointDestroyer
   layers:
   - Default
   - TransparentFX

@@ -21,7 +21,7 @@ public class DoorScript : MonoBehaviour
 
     void Start()
     {
-        BoxCollider = gameObject.transform.GetChild(0).GetComponent<Collider2D>();
+        //BoxCollider = gameObject.transform.GetChild(0).GetComponent<Collider2D>();
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
         EventManager.roomCompletedEvent += doorOpen;
         EventManager.roomCompletedEvent += isCompleted;
@@ -31,7 +31,10 @@ public class DoorScript : MonoBehaviour
     {
         if (templates.disableRooms == true && enemyCheck == false)
         {
-            enemyCounter = GameObject.FindGameObjectWithTag("EnemyCounter");
+            if (GameObject.FindGameObjectWithTag("EnemyCounter") != null)
+            {
+                enemyCounter = GameObject.FindGameObjectWithTag("EnemyCounter");
+            }
             enemyCheck = true;
         }
     }

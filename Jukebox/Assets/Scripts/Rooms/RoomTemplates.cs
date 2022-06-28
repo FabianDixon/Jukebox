@@ -15,7 +15,6 @@ public class RoomTemplates : MonoBehaviour
     public GameObject[] rightRooms;
 	public GameObject[] bossRooms;
 	public GameObject[] roomEnablers;
-	public GameObject[] doorFix;
 
 	[SerializeField]
 	private int counter = 0;
@@ -24,9 +23,11 @@ public class RoomTemplates : MonoBehaviour
 	public List<GameObject> rooms;
     public int MaxRooms;
 	private GameObject room;
+	private GameObject lastRoom;
+	private GameObject BossR;
+	private GameObject BossR_Enabler;
 	public GameObject blockedRoom;
 	public GameObject secretRoom;
-	public GameObject boss;
 
 	private bool HaveSpawnedR;
 	private bool HaveSpawnedL;
@@ -34,7 +35,6 @@ public class RoomTemplates : MonoBehaviour
 	private bool HaveSpawnedB;
 
 	public bool bossRoom = false;
-	private bool fixedRooms = false;
 	public bool disableRooms = false;
 
 	public List<GameObject> listTreasure;
@@ -53,83 +53,55 @@ public class RoomTemplates : MonoBehaviour
         if (rooms.Count >= MaxRooms)
         {
 			count = false;
-			FixRooms();
-			TreasureRoom();
-			DisableRooms();
+			Invoke("BossRoom", 0.8f);
 		}
-		else if (rooms.Count < MaxRooms && counter >= 120)
-        {
-			UItoDestroy = GameObject.FindGameObjectsWithTag("UI");
-			foreach (GameObject UI in UItoDestroy) { Destroy(UI); }
+		//else if (rooms.Count < MaxRooms && counter >= 120)
+  //      {
+		//	UItoDestroy = GameObject.FindGameObjectsWithTag("UI");
+		//	foreach (GameObject UI in UItoDestroy) { Destroy(UI); }
 
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-		}
+		//	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		//}
 
     }
 	
-	void FixRooms()
-	{
-		if (fixedRooms == false && bossRoom == true)
+	void BossRoom()
+    {
+        if (bossRoom == false)
         {
-            for (int i = 0; i < rooms.Count; i++)
-            {
-				room = rooms[i];
-                if (room.transform.Find("RoomSpawnPointR") != null)
-                {
-					HaveSpawnedR = room.transform.Find("RoomSpawnPointR").GetComponent<RoomSpawner>().spawned;
-					if (HaveSpawnedR == false && room.transform.Find("DoorRight") != null)
-					{
-						GameObject newDoor = Instantiate(doorFix[2], room.transform.Find("DoorRight").position, room.transform.Find("DoorRight").rotation);
-						newDoor.transform.parent = room.transform;
-						Destroy(room.transform.Find("DoorRight").gameObject);
-					}
-				}
+			lastRoom = rooms[rooms.Count-1];
 
-				if (room.transform.Find("RoomSpawnPointL") != null)
-				{
-					HaveSpawnedL = room.transform.Find("RoomSpawnPointL").GetComponent<RoomSpawner>().spawned;
-					if (HaveSpawnedL == false && room.transform.Find("DoorLeft") != null)
-					{
-						GameObject newDoor = Instantiate(doorFix[3], room.transform.Find("DoorLeft").position, room.transform.Find("DoorLeft").rotation);
-						newDoor.transform.parent = room.transform;
-						Destroy(room.transform.Find("DoorLeft").gameObject);
-					}
-				}
-
-				if (room.transform.Find("RoomSpawnPointT") != null)
-				{
-					HaveSpawnedT = room.transform.Find("RoomSpawnPointT").GetComponent<RoomSpawner>().spawned;
-					if (HaveSpawnedT == false && room.transform.Find("DoorUp") != null)
-					{
-						GameObject newDoor = Instantiate(doorFix[0], room.transform.Find("DoorUp").position, room.transform.Find("DoorUp").rotation);
-						newDoor.transform.parent = room.transform;
-						Destroy(room.transform.Find("DoorUp").gameObject);
-					}
-				}
-
-				if (room.transform.Find("RoomSpawnPointB") != null)
-				{
-					HaveSpawnedB = room.transform.Find("RoomSpawnPointB").GetComponent<RoomSpawner>().spawned;
-					if (HaveSpawnedB == false && room.transform.Find("DoorDown") != null)
-					{
-						GameObject newDoor = Instantiate(doorFix[1], room.transform.Find("DoorDown").position, room.transform.Find("DoorDown").rotation);
-						newDoor.transform.parent = room.transform;
-						Destroy(room.transform.Find("DoorDown").gameObject);
-					}
-				}	
+			if (lastRoom.name == "RoomB(Clone)")
+			{
+				BossR = Instantiate(bossRooms[0], lastRoom.transform.position, lastRoom.transform.rotation);
 			}
-			fixedRooms = true;			
-        }
-	}
+			else if (lastRoom.name == "RoomT(Clone)")
+			{
+				BossR = Instantiate(bossRooms[1], lastRoom.transform.position, lastRoom.transform.rotation);
+			}
+			else if (lastRoom.name == "RoomL(Clone)")
+			{
+				BossR = Instantiate(bossRooms[2], lastRoom.transform.position, lastRoom.transform.rotation);
+			}
+			else if (lastRoom.name == "RoomR(Clone)")
+			{
+				BossR = Instantiate(bossRooms[3], lastRoom.transform.position, lastRoom.transform.rotation);
+			}
+			BossR.transform.parent = null;
+			rooms.Remove(lastRoom);
+			Destroy(lastRoom.gameObject);
+			bossRoom = true;
+		}
+		TreasureRoom();
+    }
 
 	void TreasureRoom()
     {
 		int children;
 		int randTreasure;
-        if (fixedRooms == true && treasureRoom == false)
+        if (bossRoom == true && treasureRoom == false)
         {
 			randRoom = Random.Range(1, rooms.Count);
-			//Debug.Log(randRoom);
 			for (int i = 1; i < rooms.Count; i++)
             {
                 if (i == randRoom)
@@ -137,23 +109,23 @@ public class RoomTemplates : MonoBehaviour
 					room = rooms[i];
 					children = room.transform.childCount;
 
-					for (int j = 2; j < children; j++)
+					for (int j = 0; j < children; j++)
                     {
                         switch (room.transform.GetChild(j).name)
                         {
-							case "DoorUp":
+							case "TopDoor":
 								break;
 							case "DoorFixUp":
 								break;
-							case "DoorDown":
+							case "BottomDoor":
 								break;
 							case "DoorFixDown":
 								break;
-							case "DoorRight":
+							case "RightDoor":
 								break;
 							case "DoorFixRight":
 								break;
-							case "DoorLeft":
+							case "LeftDoor":
 								break;
 							case "DoorFixLeft":
 								break;
@@ -170,6 +142,8 @@ public class RoomTemplates : MonoBehaviour
 					GameObject Treasure = Instantiate(listTreasure[randTreasure], room.transform.position, room.transform.rotation);
 					Treasure.transform.parent = room.transform;
 					treasureRoom = true;
+					DisableRooms();
+					break;
 				}
 			}
 		}
@@ -185,6 +159,7 @@ public class RoomTemplates : MonoBehaviour
 				room = rooms[i];
                 room.SetActive(false);
 			}
+			BossR.SetActive(false);
 			disableRooms = true;
 			EventManager.levelConstructed();
 		}

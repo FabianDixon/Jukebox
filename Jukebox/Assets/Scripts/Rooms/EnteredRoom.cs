@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnteredRoom : MonoBehaviour
 {
     public bool isEntered = false;
-    public Transform Parent;
+    private Transform Parent;
 
     private Transform doorUp;
     private Transform doorDown;
@@ -23,10 +23,10 @@ public class EnteredRoom : MonoBehaviour
         {
             isEntered = true; 
             int numChild = Parent.childCount;
-            doorUp = Parent.GetChild(numChild - 1).Find("DoorUp");
-            doorDown = Parent.GetChild(numChild - 1).Find("DoorDown");
-            doorLeft = Parent.GetChild(numChild - 1).Find("DoorLeft");
-            doorRight = Parent.GetChild(numChild - 1).Find("DoorRight");
+            doorUp = Parent.GetChild(numChild - 1).Find("TopDoor");
+            doorDown = Parent.GetChild(numChild - 1).Find("BottomDoor");
+            doorLeft = Parent.GetChild(numChild - 1).Find("LeftDoor");
+            doorRight = Parent.GetChild(numChild - 1).Find("RightDoor");
 
             if(doorUp != null) 
             {
