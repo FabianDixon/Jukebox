@@ -17,6 +17,7 @@ TagManager:
   - EnemyCounter
   - initialRoom
   - SpawnPointDestroyer
+  - BossRoom
   layers:
   - Default
   - TransparentFX
