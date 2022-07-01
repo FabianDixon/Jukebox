@@ -10,7 +10,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private PlayerStats speedStat;
 
-    [SerializeField] private float moveSpeed;
+    private float moveSpeed;
+    [SerializeField] private float speed;
 
     private musicalDynamics dynamics;
 
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
         dynamics = gameObject.GetComponent<musicalDynamics>();
         moveSpeed = speedStat.speed;
+        speed = speedStat.speed;
 
         DontDestroyOnLoad(this.gameObject);
     }
@@ -62,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        moveSpeed = speedStat.speed * dynamics.moveSpeedModifier;
+        moveSpeed = speed * dynamics.moveSpeedModifier;
     }
 
     void FixedUpdate()
@@ -73,12 +75,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void GainMovementSpeed(float speedGained)
     {
-        moveSpeed += speedGained;
+        speed += speedGained;
     }
 
     public void LoseMovementSpeed(float speedLost)
     {
-        moveSpeed -= speedLost;
+        speed -= speedLost;
     }
 
     void OnEnable()

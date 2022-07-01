@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f6d862d5b1bd654ca9f250d3d854096, type: 3}
-  m_Name: DmgUp
+  m_Name: DmgUpPot
   m_EditorClassIdentifier: 
   health: 0
   speed: 0

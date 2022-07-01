@@ -15,6 +15,7 @@ public class musicalDynamics : MonoBehaviour
 
     public float dmgModifier;
     public float speedModifier;
+    public float fireRateModifier;
     public float sizeModifier;
     public float rangeModifier;
     public float moveSpeedModifier;
@@ -46,6 +47,7 @@ public class musicalDynamics : MonoBehaviour
         sizeModifier = 1f;
         rangeModifier = 1f;
         moveSpeedModifier = 1f;
+        fireRateModifier = 0f;
     }
 
     void Update()
@@ -69,6 +71,7 @@ public class musicalDynamics : MonoBehaviour
             sizeModifier = 1f;
             rangeModifier = 1f;
             moveSpeedModifier = 1f;
+            fireRateModifier = 0f;
 
             dynamicScale = 0f;
             if (forteUI != null && pianoUI != null)
@@ -149,6 +152,7 @@ public class musicalDynamics : MonoBehaviour
             speedModifier = 1f;
             sizeModifier = 1f;
             rangeModifier = 1f;
+            fireRateModifier = 0f;
             defaultValues = true;
             mezzo_forte = false;
             mezzo_piano = false;
@@ -163,6 +167,7 @@ public class musicalDynamics : MonoBehaviour
             sizeModifier = 1.25f;
             speedModifier = 0.75f;
             rangeModifier = 0.75f;
+            fireRateModifier = -0.2f;
             mezzo_forte = true;
             defaultValues = false;
             forte = false;
@@ -177,6 +182,7 @@ public class musicalDynamics : MonoBehaviour
             sizeModifier = 1.5f;
             speedModifier = 0.5f;
             rangeModifier = 0.5f;
+            fireRateModifier = -0.4f;
             mezzo_forte = false;
             forte = true;
         }
@@ -188,6 +194,7 @@ public class musicalDynamics : MonoBehaviour
         sizeModifier = 3f;
         speedModifier = 0.5f;
         rangeModifier = 0.5f;
+        fireRateModifier = -0.4f;
         StartCoroutine(waiter());
     }
 
@@ -198,6 +205,7 @@ public class musicalDynamics : MonoBehaviour
             moveSpeedModifier = 1.25f;
             speedModifier = 1.25f;
             rangeModifier = 1.25f;
+            fireRateModifier = 1f;
             dmgModifier = 0.85f;
             defaultValues = false;
             piano = false;
@@ -212,6 +220,7 @@ public class musicalDynamics : MonoBehaviour
             moveSpeedModifier = 1.5f;
             speedModifier = 1.5f;
             rangeModifier = 1.5f;
+            fireRateModifier = 2f;
             dmgModifier = 0.65f;
             piano = true;
             mezzo_piano = false;
@@ -223,6 +232,7 @@ public class musicalDynamics : MonoBehaviour
         moveSpeedModifier = 3f;
         speedModifier = 3f;
         rangeModifier = 3f;
+        fireRateModifier = 10f;
         dmgModifier = 0.65f;
         StartCoroutine(waiter());
     }
@@ -237,6 +247,7 @@ public class musicalDynamics : MonoBehaviour
         sizeModifier = 1f;
         rangeModifier = 1f;
         moveSpeedModifier = 1f;
+        fireRateModifier = 0f;
 
         dynamicScale = 0f;
         if (forteUI != null && pianoUI != null)

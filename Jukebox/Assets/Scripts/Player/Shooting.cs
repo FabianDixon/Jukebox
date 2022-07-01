@@ -16,9 +16,13 @@ public class Shooting : MonoBehaviour
     private Image weaponUI;
 
     public float force;
+    public float power;
     public float distance;
     public float speed;
     public float bulletSize;
+
+    public float fireRate;
+    public float fRate;
 
     private Transform bullet;
     private Animator animator;
@@ -26,14 +30,19 @@ public class Shooting : MonoBehaviour
     public int direction = 0;
     private float shoot = 0f;
 
+    private bool readyToFire = true;
+
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
         dynamics = gameObject.GetComponent<musicalDynamics>();
         force = Stat.damage * dynamics.dmgModifier;
+        power = Stat.damage;
         distance = Stat.projectileDistance * dynamics.rangeModifier;
         speed = Stat.projectileSpeed * dynamics.speedModifier;
         bulletSize = dynamics.sizeModifier;
+        fireRate = currentWeapon.GetComponent<Stats>()._FireRate + dynamics.fireRateModifier;
+        fRate = fireRate;
 
         currentWeapon.transform.parent = null;
 
@@ -46,38 +55,54 @@ public class Shooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("right"))
+        if (Input.GetKey("right") && readyToFire == true)
         {
             direction = 1;
             Shoot(1);
             shoot = 0.1f;
+            readyToFire = false;
+            StartCoroutine(waitToShoot(fireRate));
         }
-        else if (Input.GetKeyDown("down"))
+        else if (Input.GetKey("down") && readyToFire == true)
         {
             direction = 2;
             Shoot(2);
             shoot = 0.6f;
+            readyToFire = false;
+            StartCoroutine(waitToShoot(fireRate));
         }
-        else if (Input.GetKeyDown("left"))
+        else if (Input.GetKey("left") && readyToFire == true)
         {
             direction = 3;
             Shoot(3);
             shoot = 0.85f;
+            readyToFire = false;
+            StartCoroutine(waitToShoot(fireRate));
         }
-        else if (Input.GetKeyDown("up"))
+        else if (Input.GetKey("up") && readyToFire == true)
         {
             direction = 4;
             Shoot(4);
             shoot = 1.1f;
+            readyToFire = false;
+            StartCoroutine(waitToShoot(fireRate));
         }
 
+        fireRate = fRate + dynamics.fireRateModifier;
         animator.SetFloat("Shoot", shoot);
+    }
+
+    IEnumerator waitToShoot(float rateOfFire)
+    {
+        float secondsToShoot = 1f / rateOfFire;
+        yield return new WaitForSeconds(secondsToShoot);
+        readyToFire = true;
     }
 
     void Shoot(int FacingDir)
         //1 facing right, 2 facing down, 3 facing left, 4 facing up  
     {
-        force = Stat.damage * dynamics.dmgModifier;
+        force = power * dynamics.dmgModifier;
         distance = Stat.projectileDistance * dynamics.rangeModifier;
         speed = Stat.projectileSpeed * dynamics.speedModifier;
         bulletSize = dynamics.sizeModifier;      
@@ -108,7 +133,22 @@ public class Shooting : MonoBehaviour
 
     public void GainDmg(float extraDmg)
     {
-        force += extraDmg;
+        power += extraDmg;
+    }
+
+    public void LoseDmg(float DmgLoss)
+    {
+        power -= DmgLoss;
+    }
+
+    public void GainFireRate(float fireRateGain)
+    {
+        fRate += fireRateGain;
+    }
+
+    public void LooseFireRate(float fireRateLoss)
+    {
+        fRate -= fireRateLoss;
     }
 
     public void SwitchProjectile(GameObject NewWeapon, GameObject newProjectile)

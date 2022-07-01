@@ -32,6 +32,7 @@ Transform:
   - {fileID: 7178375992479186202}
   - {fileID: 6163186318207344114}
   - {fileID: 4937981244203275898}
+  - {fileID: 8288482546271544997}
   - {fileID: 1883941643428500186}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -70,7 +71,9 @@ MonoBehaviour:
   - {fileID: 3714779403420723831, guid: ec1ac8aa64e08ae478b021f2aec83b3d, type: 3}
   - {fileID: 6143425328187680340, guid: 7e26353e1fe01ec4aba8cde2b1fd801c, type: 3}
   - {fileID: 7690045506814325120, guid: 351825166f5cd294da6d38d03288adbf, type: 3}
+  doorFixType: 00000000010000000200000003000000
   openingDirection: 3
+  isBossRoom: 0
 --- !u!1 &2353477021274408357
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,6 +1059,53 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!1 &3676193975123354552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8288482546271544997}
+  - component: {fileID: 4154903376900255605}
+  m_Layer: 0
+  m_Name: ItemSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8288482546271544997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3676193975123354552}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7861059173686496152}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4154903376900255605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3676193975123354552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb84d2aca01c5b248b7f3c7eb4a00c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 4454155170306848372, guid: 6dd573e33d698b5438077274bafc1d23, type: 3}
+  - {fileID: 8709145055084877867, guid: 476a2a1dd7cfb3548865c9a3fb4610b4, type: 3}
+  - {fileID: 7450729104319630177, guid: f575b2e8100d33b4093780e8aa3a026e, type: 3}
 --- !u!1 &3811521547652916372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,7 +1358,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1681121944229862277, guid: 42d63c801c11db342b33a1cfb830ebf8, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1681121944229862277, guid: 42d63c801c11db342b33a1cfb830ebf8, type: 3}
       propertyPath: m_LocalPosition.x

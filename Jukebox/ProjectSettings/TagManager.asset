@@ -18,6 +18,8 @@ TagManager:
   - initialRoom
   - SpawnPointDestroyer
   - BossRoom
+  - ActiveItem
+  - Consumable
   layers:
   - Default
   - TransparentFX
@@ -25,7 +27,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - PlayerBullet
   - 
   - 
   - 

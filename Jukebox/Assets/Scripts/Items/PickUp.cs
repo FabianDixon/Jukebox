@@ -11,6 +11,8 @@ public class PickUp : MonoBehaviour
     private Image itemUI;
     private SpriteRenderer itemSprite;
 
+    private string itemType;
+
     void Start()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
@@ -20,10 +22,12 @@ public class PickUp : MonoBehaviour
         if (this.gameObject.tag == "ActiveItem")
         {
             itemUI = GameObject.FindGameObjectWithTag("activeItemUI").GetComponent<Image>();
+            itemType = "Active";
         }
         else if (this.gameObject.tag == "Consumable")
         {
             itemUI = GameObject.FindGameObjectWithTag("consumableUI").GetComponent<Image>();
+            itemType = "Consumable";
         }
     }
 
@@ -34,21 +38,43 @@ public class PickUp : MonoBehaviour
             Item itemScript = trigger.transform.GetComponent<Item>();
             if (itemScript != null)
             {
-                if (itemScript.isFull == false)
+                if (itemType == "Active")
                 {
-                    itemScript.isFull = true;
-                    itemScript.currentItem = this.gameObject;
-                    transform.GetChild(0).gameObject.SetActive(true);
-                    transform.position = new Vector3(1500, 100, 0);
+                    if (itemScript.isActiveFull == false)
+                    {
+                        itemScript.isActiveFull = true;
+                        itemScript.currentActiveItem = this.gameObject;
+                        transform.GetChild(0).gameObject.SetActive(true);
+                        transform.position = new Vector3(15000, 100, 0);
+                    }
+                    else
+                    {
+                        Vector2 targetCircleCenter = new Vector2(transform.position.x, transform.position.y);
+                        itemScript.currentActiveItem.transform.position = targetCircleCenter + Random.insideUnitCircle * Random.Range(2, 4);
+                        itemScript.currentActiveItem.transform.GetChild(0).gameObject.SetActive(false);
+                        transform.position = new Vector3(15000, 100, 0);
+                        itemScript.currentActiveItem = this.gameObject;
+                        transform.GetChild(0).gameObject.SetActive(true);
+                    }
                 }
-                else
+                else if (itemType == "Consumable")
                 {
-                    Vector2 targetCircleCenter = new Vector2(transform.position.x, transform.position.y);
-                    itemScript.currentItem.transform.position = targetCircleCenter + Random.insideUnitCircle * Random.Range(2, 4);
-                    itemScript.currentItem.transform.GetChild(0).gameObject.SetActive(false);
-                    transform.position = new Vector3(1500, 100, 0);
-                    itemScript.currentItem = this.gameObject;
-                    transform.GetChild(0).gameObject.SetActive(true);
+                    if (itemScript.isConsumableFull == false)
+                    {
+                        itemScript.isConsumableFull = true;
+                        itemScript.currentConsumable = this.gameObject;
+                        transform.GetChild(0).gameObject.SetActive(true);
+                        transform.position = new Vector3(15000, 100, 0);
+                    }
+                    else
+                    {
+                        Vector2 targetCircleCenter = new Vector2(transform.position.x, transform.position.y);
+                        itemScript.currentConsumable.transform.position = targetCircleCenter + Random.insideUnitCircle * Random.Range(2, 4);
+                        itemScript.currentConsumable.transform.GetChild(0).gameObject.SetActive(false);
+                        transform.position = new Vector3(15000, 100, 0);
+                        itemScript.currentConsumable = this.gameObject;
+                        transform.GetChild(0).gameObject.SetActive(true);
+                    }
                 }
                 itemUI.sprite = itemSprite.sprite;
                 var tempColor = itemUI.color;
