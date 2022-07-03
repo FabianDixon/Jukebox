@@ -9,6 +9,8 @@ public class GameOver_Buttons : MonoBehaviour
 
     public void Back2MainMenu()
     {
+        Destroy(GameObject.FindGameObjectWithTag("GameOverMenu"));
+        Destroy(GameObject.FindGameObjectWithTag("EventManager"));
         SceneManager.LoadScene(0);
     }
 

@@ -11,6 +11,7 @@ public class DoorSpawner : MonoBehaviour
 
     private int randNumDoors;
     private int randDoorPos;
+    [SerializeField]
     private List<int> doorType = new List<int> { 0, 1, 2, 3 };
     [SerializeField]
     private List<int> doorFixType = new List<int> { 0, 1, 2, 3 };
@@ -24,16 +25,9 @@ public class DoorSpawner : MonoBehaviour
 
     public int openingDirection;
 
-    [SerializeField]
-    private bool isBossRoom = false;
-
     void Start()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
-        if (this.gameObject.tag == "BossRoom")
-        {
-            isBossRoom = true;
-        }
         switch (openingDirection)
         {
             case 1:
@@ -64,6 +58,7 @@ public class DoorSpawner : MonoBehaviour
         int count = templates.rooms.Count;
         if (count < maxRooms)
         {
+            
             if ((maxRooms - count) > 2)
             {
                 randNumDoors = Random.Range(1, doorType.Count + 1); //limite superior exclusivo e inferior inclusivo.
@@ -73,10 +68,6 @@ public class DoorSpawner : MonoBehaviour
                     spawnDoor(doorType[randDoorPos], true);
                     doorType.RemoveAt(randDoorPos);
                     doorFixType.RemoveAt(randDoorPos);
-                }
-                for (int i = 0; i < doorFixType.Count; i++)
-                {
-                    spawnDoor(doorFixType[i], false);
                 }
             }
             else if ((maxRooms - count) == 2)
@@ -89,10 +80,6 @@ public class DoorSpawner : MonoBehaviour
                     doorType.RemoveAt(randDoorPos);
                     doorFixType.RemoveAt(randDoorPos);
                 }
-                for (int i = 0; i < doorFixType.Count; i++)
-                {
-                    spawnDoor(doorFixType[i], false);
-                }
             }
             else if ((maxRooms - count) == 1)
             {
@@ -104,18 +91,11 @@ public class DoorSpawner : MonoBehaviour
                     doorType.RemoveAt(randDoorPos);
                     doorFixType.RemoveAt(randDoorPos);
                 }
-                for (int i = 0; i < doorFixType.Count; i++)
-                {
-                    spawnDoor(doorFixType[i], false);
-                }
             }
         }
-        else if (isBossRoom == true)
+        for (int i = 0; i < doorFixType.Count; i++)
         {
-            for (int i = 0; i < doorFixType.Count; i++)
-            {
-                spawnDoor(doorFixType[i], false);
-            }
+            spawnDoor(doorFixType[i], false);
         }
     }
 

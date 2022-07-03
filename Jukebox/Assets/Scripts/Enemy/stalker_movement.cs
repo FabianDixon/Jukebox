@@ -8,7 +8,7 @@ public class stalker_movement : MonoBehaviour
     public EnemyStats speedStat;
 
     private float Initalspeed;
-    private float speed = 2f;
+    public float speed;
 
     public Animator animator;
     public Rigidbody2D rb;
@@ -16,11 +16,13 @@ public class stalker_movement : MonoBehaviour
     private Transform player;
     private SpriteRenderer _renderer;
 
-    private bool m_FacingRight = true;
     private bool isPlayer = false;
+    private float idle = 0f;
 
     private float relPos;
     Vector2 movement;
+
+    private bool isPlayerInRoom = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,20 +30,47 @@ public class stalker_movement : MonoBehaviour
         _renderer = rb.GetComponent<SpriteRenderer>();
 
         Initalspeed = speedStat.speed;
+
+        EventManager.enteredRoomEvent += startMoving;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isPlayer && player != null)
+        if (isPlayerInRoom == true)
         {
-            movement.x = (player.position.x - rb.position.x);
-            movement.y = (player.position.y - rb.position.y);
-            movement = movement.normalized;
-            relPos = player.position.x - transform.position.x;
-            if (m_FacingRight && relPos < 0) { flip(); }
-            else if (!m_FacingRight && relPos > 0) { flip(); }
+            if (isPlayer && player != null)
+            {
+                movement.x = (player.position.x - rb.position.x);
+                movement.y = (player.position.y - rb.position.y);
+                movement = movement.normalized;
+                relPos = player.position.x - transform.position.x;
+            }
+
+            animator.SetFloat("Horizontal", movement.x);
+            if (movement.x > 0)
+            {
+                idle = 0.1f;
+            }
+            else if (movement.x < 0)
+            {
+                idle = 0.6f;
+            }
+
+            animator.SetFloat("Vertical", movement.y);
+            if (movement.y > 0)
+            {
+                idle = 0.85f;
+            }
+            else if (movement.y < 0)
+            {
+                idle = 1.1f;
+            }
         }
+
+        animator.SetFloat("idle", idle);
+
+        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     void FixedUpdate()
@@ -58,27 +87,22 @@ public class stalker_movement : MonoBehaviour
             isPlayer = true;
             player = GameObject.FindGameObjectWithTag("Player").transform;
             relPos = player.position.x - transform.position.x;
-            if (relPos > 0) { m_FacingRight = true; }
-            else if (relPos < 0) { m_FacingRight = false; }
             speed = Initalspeed;
-            animator.SetFloat("Speed", speed);
         }
     }
-
-    //private void OnTriggerExit2D(Collider2D other)
-    //{
-    //    if (other.gameObject.tag == "Player")
-    //    {
-    //        isPlayer = false;
-    //        speed = 0f;
-    //        animator.SetFloat("Speed", speed);
-    //    }
-    //}
-
-    private void flip()
+    void OnEnable()
     {
-        m_FacingRight = !m_FacingRight;
-
-        _renderer.flipX = !_renderer.flipX;
+        EventManager.enteredRoomEvent += startMoving;
     }
+
+    void OnDisable()
+    {
+        EventManager.enteredRoomEvent -= startMoving;
+    }
+    private void startMoving()
+    {
+        isPlayerInRoom = true;
+        EventManager.enteredRoomEvent -= startMoving;
+    }
+
 }

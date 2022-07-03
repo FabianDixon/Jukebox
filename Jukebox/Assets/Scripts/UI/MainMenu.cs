@@ -18,12 +18,14 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         Destroy(GameObject.FindGameObjectWithTag("Player"));
+        Destroy(GameObject.FindGameObjectWithTag("PauseMenu"));
 
         UItoDestroy = GameObject.FindGameObjectsWithTag("UI");
         foreach (GameObject UI in UItoDestroy)
         {
             Destroy(UI);
         }
+        Time.timeScale = 1f;
     }
 
     public void PlayGame()
@@ -48,7 +50,6 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("Quit");
         Application.Quit();
     }
 

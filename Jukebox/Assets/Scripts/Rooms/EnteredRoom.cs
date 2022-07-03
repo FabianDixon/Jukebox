@@ -21,7 +21,11 @@ public class EnteredRoom : MonoBehaviour
     {
         if (trigger.gameObject.tag == "Player")
         {
-            isEntered = true; 
+            isEntered = true;
+            if (this.transform.parent.gameObject.tag != "initialRoom")
+            {
+                EventManager.PlayerEnteredRoom();
+            }
             int numChild = Parent.childCount;
             doorUp = Parent.GetChild(numChild - 1).Find("TopDoor");
             doorDown = Parent.GetChild(numChild - 1).Find("BottomDoor");
@@ -48,7 +52,6 @@ public class EnteredRoom : MonoBehaviour
                 DoorScript door = doorLeft.gameObject.GetComponent<DoorScript>();
                 door.triggerCollider.enabled = true;
             }
-
         }
     }
 

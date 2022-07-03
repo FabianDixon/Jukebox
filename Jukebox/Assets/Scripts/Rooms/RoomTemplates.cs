@@ -113,21 +113,29 @@ public class RoomTemplates : MonoBehaviour
                     {
                         switch (room.transform.GetChild(j).name)
                         {
-							case "TopDoor":
+							case "TopDoor(Clone)":
 								break;
-							case "DoorFixUp":
+							case "TopDoorFix(Clone)":
+								break;
+							case "BottomDoor(Clone)":
+								break;
+							case "BottomDoorFix(Clone)":
+								break;
+							case "RightDoor(Clone)":
+								break;
+							case "RightDoorFix(Clone)":
+								break;
+							case "LeftDoor(Clone)":
+								break;
+							case "LeftDoorFix(Clone)":
+								break;
+							case "TopDoor":
 								break;
 							case "BottomDoor":
 								break;
-							case "DoorFixDown":
-								break;
 							case "RightDoor":
 								break;
-							case "DoorFixRight":
-								break;
 							case "LeftDoor":
-								break;
-							case "DoorFixLeft":
 								break;
 							case "Grid":
 								break;
@@ -159,6 +167,7 @@ public class RoomTemplates : MonoBehaviour
 				room = rooms[i];
                 room.SetActive(false);
 			}
+			StartCoroutine(waiter());
 			BossR.SetActive(false);
 			disableRooms = true;
 			EventManager.levelConstructed();
@@ -194,6 +203,11 @@ public class RoomTemplates : MonoBehaviour
 				listTreasure.Remove(listTreasure[i].gameObject);
 			}
         }
+	}
+
+	IEnumerator waiter()
+	{
+		yield return new WaitForSeconds(1f);
 	}
 
 }

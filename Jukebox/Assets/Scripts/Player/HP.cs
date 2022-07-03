@@ -93,17 +93,18 @@ public class HP : MonoBehaviour
         hurtBox.enabled = false;
         SpriteRenderer selfImage = Self.GetComponent<SpriteRenderer>();
         var tempColor = selfImage.color;
-        tempColor.a = 140f;
+        tempColor.a = 0f;
         selfImage.color = tempColor;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.25f);
         tempColor.a = 255f;
         selfImage.color = tempColor;
-        yield return new WaitForSeconds(0.1f);
-        tempColor.a = 140f;
+        yield return new WaitForSeconds(0.25f);
+        tempColor.a = 0f;
         selfImage.color = tempColor;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.25f);
         tempColor.a = 255f;
         selfImage.color = tempColor;
+        yield return new WaitForSeconds(0.25f);
         hurtBox.enabled = true;
     }
 

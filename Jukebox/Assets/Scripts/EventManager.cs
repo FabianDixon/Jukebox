@@ -14,6 +14,12 @@ public class EventManager : MonoBehaviour
     public static Action GameOverEvent;
     public static Action useActiveItemEvent;
     public static Action useConsumableEvent;
+    public static Action enteredRoomEvent;
+
+    public static void PlayerEnteredRoom()
+    {
+        enteredRoomEvent?.Invoke();
+    }
 
     public static void consumableUse()
     {

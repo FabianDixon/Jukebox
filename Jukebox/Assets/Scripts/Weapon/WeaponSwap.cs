@@ -12,6 +12,8 @@ public class WeaponSwap : MonoBehaviour
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
 
+        transform.parent = null;
+
         EventManager.bossRoomClearEvent += destroy;
     }
 
@@ -23,8 +25,8 @@ public class WeaponSwap : MonoBehaviour
             if (shooting != null)
             {
                 Vector2 targetCircleCenter = new Vector2(transform.position.x, transform.position.y);
-                shooting.currentWeapon.transform.position = targetCircleCenter + Random.insideUnitCircle * Random.Range(2, 4);
-                transform.position = new Vector3(1500, 0, 0);
+                shooting.currentWeapon.transform.position = targetCircleCenter + Random.insideUnitCircle * Random.Range(2, 20);
+                transform.position = new Vector3(15000, 0, 0);
                 shooting.SwitchProjectile(this.gameObject, ProjectilePrefab);
             }
             templates.RemoveFromlistTreasure(this.gameObject.name);
@@ -35,7 +37,10 @@ public class WeaponSwap : MonoBehaviour
 
     void destroy()
     {
-        Destroy(this.gameObject);
-        EventManager.bossRoomClearEvent -= destroy;
+        if (transform.parent.tag != "Player")
+        {
+            Destroy(this.gameObject);
+            EventManager.bossRoomClearEvent -= destroy;
+        }
     }
 }

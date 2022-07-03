@@ -37,27 +37,25 @@ public class CamMovement : MonoBehaviour
         {
             case 1:
                 camChange = new Vector3(0, 360, 0);
-                transform.Translate(camChange);
                 playerChange = new Vector3(0,100,0);
                 break;
             case 4:
                 camChange = new Vector3(640, 0, 0);
-                transform.Translate(camChange);
                 playerChange = new Vector3(120, 0, 0);
                 break;
             case 2:
                 camChange = new Vector3(0, -360, 0);
-                transform.Translate(camChange);
                 playerChange = new Vector3(0, -100, 0);
                 break;
             case 3:
                 camChange = new Vector3(-640, 0, 0);
-                transform.Translate(camChange);
                 playerChange = new Vector3(-120, 0, 0);
                 break;
             default:
                 break;
         }
+        transform.Translate(camChange);
+        //transform.position += camChange;
         player.position += playerChange;
 
         EventManager.camMoveEvent -= Move;

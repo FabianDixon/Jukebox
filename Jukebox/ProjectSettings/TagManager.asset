@@ -20,6 +20,12 @@ TagManager:
   - BossRoom
   - ActiveItem
   - Consumable
+  - Hurt_Box
+  - Enemy_Hurt_Box
+  - SpawnPoint
+  - PauseMenu
+  - GameOverMenu
+  - EventManager
   layers:
   - Default
   - TransparentFX

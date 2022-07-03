@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
+    [SerializeField] private PlayerStats luckStat;
+    public int luck;
+
     public bool isActiveFull; //meaning you already have an item
     public bool isConsumableFull;
 
     public GameObject currentActiveItem;
     public GameObject currentConsumable;
 
-    // Update is called once per frame
+    void Start()
+    {
+        luck = luckStat.luck;
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -46,5 +53,15 @@ public class Item : MonoBehaviour
         {
             Debug.Log("There's no item to use");
         }
+    }
+
+    public void gainLuck(int luckGained)
+    {
+        luck += luckGained;
+    }
+
+    public void looseLuck(int luckLost)
+    {
+        luck -= luckLost;
     }
 }

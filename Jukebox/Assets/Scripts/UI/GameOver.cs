@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
-    GameObject[] allObjects;
-    List<GameObject> objectsToDisable;
+    //GameObject[] allObjects;
+    //List<GameObject> objectsToDisable;
 
-    // Start is called before the first frame update
+    [SerializeField]
+    private GameObject GameOverUI;
+
     void Start()
     {
-        allObjects = FindObjectsOfType<GameObject>();
-        objectsToDisable = new List<GameObject>(allObjects);
-
+        //allObjects = FindObjectsOfType<GameObject>();
+        //objectsToDisable = new List<GameObject>(allObjects);
+        DontDestroyOnLoad(this.gameObject);
         EventManager.GameOverEvent += gameOver;
-
-        gameObject.SetActive(false);
     }
 
     void gameOver()
-    {      
+    {
         //activate gameover screen
-        gameObject.SetActive(true);
+        GameOverUI.SetActive(true);
     }
 
     void OnDestroy()

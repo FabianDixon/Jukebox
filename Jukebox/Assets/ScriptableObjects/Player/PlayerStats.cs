@@ -8,4 +8,5 @@ public class PlayerStats : ScriptableObject
     public float damage;
     public float projectileDistance;
     public float projectileSpeed;
+    public int luck;
 }

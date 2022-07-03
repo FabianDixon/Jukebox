@@ -153,8 +153,11 @@ public class Shooting : MonoBehaviour
 
     public void SwitchProjectile(GameObject NewWeapon, GameObject newProjectile)
     {
+        currentWeapon.transform.parent = null;
+
         BulletPrefab = newProjectile;
         currentWeapon = NewWeapon;
+        currentWeapon.transform.parent = transform;
 
         weaponSprite = currentWeapon.GetComponent<SpriteRenderer>();
         weaponUI.sprite = weaponSprite.sprite;

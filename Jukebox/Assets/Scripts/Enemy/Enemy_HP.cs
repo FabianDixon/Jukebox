@@ -10,6 +10,8 @@ public class Enemy_HP : MonoBehaviour
     private float health;
     private float chargeAmount;
 
+    private stalker_movement moveSpeed;
+
     public GameObject Self;
     public GameObject DeathEffect;
 
@@ -19,11 +21,14 @@ public class Enemy_HP : MonoBehaviour
     {
         health = Stat.health;
         chargeAmount = Stat.chargeAmount;
+        moveSpeed = Self.GetComponent<stalker_movement>();
     }
 
     public void TakeDamage(float damage)
     {
         health -= damage;
+
+        StartCoroutine(slowOnHit());
 
         if (health <= 0) { Die(); }
     }
@@ -42,5 +47,13 @@ public class Enemy_HP : MonoBehaviour
         AddEnemy enemy = transform.parent.GetComponent<AddEnemy>();
         if (enemy != null) { enemy.delete(); }
         Destroy(Self);
+    }
+
+    IEnumerator slowOnHit()
+    {
+        float currentSpeed = moveSpeed.speed;
+        moveSpeed.speed -= 10f;
+        yield return new WaitForSeconds(1f);
+        moveSpeed.speed = currentSpeed;
     }
 }

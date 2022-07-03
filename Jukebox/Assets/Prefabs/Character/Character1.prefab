@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 858105834383922415}
   m_Layer: 0
   m_Name: HurtBox
-  m_TagString: Untagged
+  m_TagString: Hurt_Box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedStat: {fileID: 11400000, guid: 18a589a4c5286544ab7dd1de5f29fad9, type: 2}
-  moveSpeed: 0
+  speed: 0
   rb: {fileID: 4706779507963046093}
   animator: {fileID: 8827290258397803099}
 --- !u!114 &4194833062805471166
@@ -297,6 +297,7 @@ MonoBehaviour:
   dynamicScale: 0
   dmgModifier: 0
   speedModifier: 0
+  fireRateModifier: 0
   sizeModifier: 0
   rangeModifier: 0
   moveSpeedModifier: 0
@@ -312,8 +313,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e582162894aae35468de48714a022de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFull: 0
-  currentItem: {fileID: 0}
+  luckStat: {fileID: 11400000, guid: 18a589a4c5286544ab7dd1de5f29fad9, type: 2}
+  luck: 0
+  isActiveFull: 0
+  isConsumableFull: 0
+  currentActiveItem: {fileID: 0}
+  currentConsumable: {fileID: 0}
 --- !u!114 &7281849129314922740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,7 +336,10 @@ MonoBehaviour:
   currentWeapon: {fileID: 8490491431147551576, guid: 89831c2517ea4894088c8a4836e9ecaf, type: 3}
   BulletPrefab: {fileID: 8578113758673341334, guid: 8bd1ff634690cea40abb57109eb95839, type: 3}
   force: 0
+  power: 0
   distance: 0
   speed: 0
   bulletSize: 0
+  fireRate: 0
+  fRate: 0
   direction: 0

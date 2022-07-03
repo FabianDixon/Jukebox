@@ -44,7 +44,7 @@ public class Enemy_melee_Dmg : MonoBehaviour
             movement.y = (-player.position.y + rb.position.y);
             movement = movement.normalized;
 
-            rb.AddForce(movement * 2000);
+            rb.AddForce(movement * 20000);
 
             rb_player = trigger.GetComponentInParent<Rigidbody2D>();
 
@@ -52,7 +52,7 @@ public class Enemy_melee_Dmg : MonoBehaviour
             movementPlayer.y = (player.position.y - rb.position.y);
             movementPlayer = movementPlayer.normalized;
 
-            rb_player.AddForce(movementPlayer * 1000);
+            rb_player.AddForce(movementPlayer * 40000);
         }
     }
 }

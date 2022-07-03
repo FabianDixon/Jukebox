@@ -10,6 +10,7 @@ public class RoomSpawner : MonoBehaviour
     //2 --> need top door
     //3 --> need left door
     //4 --> need right door
+    private int doorID;
 
     public Vector3 relativetransform;
     private RoomTemplates templates;
@@ -17,18 +18,38 @@ public class RoomSpawner : MonoBehaviour
     public bool spawned = false;
     private bool otherSpawned = false;
 
+    private GameObject[] doorFix;
+
     public float waitTime;
 
     // Start is called before the first frame update
     void Start()
     {
+        doorFix = transform.parent.parent.gameObject.GetComponent<DoorSpawner>().doorFix;
+        switch (openingDirection)
+        {
+            case 1:
+                doorID = 0;
+                break;
+            case 2:
+                doorID = 2;
+                break;
+            case 3:
+                doorID = 1;
+                break;
+            case 4:
+                doorID = 3;
+                break;
+            default:
+                break;
+        }
         if (transform.position.x == 0 && transform.position.y == 0)
         {
             spawned = true;
         }
         else
         {
-            Destroy(this.gameObject, 2.0f);
+            Destroy(this.gameObject, 4.0f);
             templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
             //Invoke("Spawn", 0.8f);
             Spawn();
@@ -72,7 +93,8 @@ public class RoomSpawner : MonoBehaviour
         if (other.gameObject.tag == "SpawnPointDestroyer")
         {
             spawned = true;
-            Destroy(this.gameObject.transform.parent.gameObject, 2.0f);
+            Instantiate(doorFix[doorID], transform.parent.position, transform.parent.rotation);
+            Destroy(this.gameObject.transform.parent.gameObject, 4.0f);
         }
         else if (other.gameObject.tag == "RoomSpawnPoint")
         {

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1138043165226765224}
+  - component: {fileID: 6579993347523784456}
   m_Layer: 0
   m_Name: RoomSpawnDestroyer
   m_TagString: SpawnPointDestroyer
@@ -30,6 +31,22 @@ Transform:
   m_Father: {fileID: 3244769374284426195}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &6579993347523784456
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8804429639897232008}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3
 --- !u!1 &9058618925225883541
 GameObject:
   m_ObjectHideFlags: 0

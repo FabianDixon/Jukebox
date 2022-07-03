@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7719203327829683776}
   - component: {fileID: 7410430327397107511}
   - component: {fileID: 5770733740913442776}
+  - component: {fileID: 7689290377438443244}
   m_Layer: 0
   m_Name: Mic_Weapon
   m_TagString: Untagged
@@ -109,4 +110,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c8d59916327a314e9d25187b67948a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _FireRate: 2
+  _FireRate: 1
+--- !u!70 &7689290377438443244
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8490491431147551576}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.2932634, y: 0}
+  m_Size: {x: 11.677294, y: 32}
+  m_Direction: 0

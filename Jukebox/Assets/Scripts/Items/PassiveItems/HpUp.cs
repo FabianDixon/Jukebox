@@ -17,7 +17,7 @@ public class HpUp : MonoBehaviour
     {
         if (trigger.gameObject.tag == "Player")
         {
-            HP Health = trigger.transform.Find("Hurt_Box").GetComponent<HP>();
+            HP Health = trigger.transform.Find("HurtBox").GetComponent<HP>();
             if (Health != null) { Health.GainHP(Hp_Up); }
             Destroy(this.gameObject);
         }

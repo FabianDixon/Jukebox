@@ -1,0 +1,1164 @@
+fileFormatVersion: 2
+guid: f7f653e769179874793904a8272c1eb3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 681408496560861296
+    second: Annoying_Fan-Sheet_0
+  - first:
+      213: -1446280607051667628
+    second: Annoying_Fan-Sheet_1
+  - first:
+      213: 759249354887145557
+    second: Annoying_Fan-Sheet_2
+  - first:
+      213: -7824078385383779986
+    second: Annoying_Fan-Sheet_3
+  - first:
+      213: 2589703770880661639
+    second: Annoying_Fan-Sheet_4
+  - first:
+      213: -4936788395856321171
+    second: Annoying_Fan-Sheet_5
+  - first:
+      213: 1821447462706023727
+    second: Annoying_Fan-Sheet_6
+  - first:
+      213: 5558197485310490038
+    second: Annoying_Fan-Sheet_7
+  - first:
+      213: -2908776106424185594
+    second: Annoying_Fan-Sheet_8
+  - first:
+      213: -303665172430078374
+    second: Annoying_Fan-Sheet_9
+  - first:
+      213: 113703886220787761
+    second: Annoying_Fan-Sheet_10
+  - first:
+      213: 7324202137201532085
+    second: Annoying_Fan-Sheet_11
+  - first:
+      213: 6490118898772615714
+    second: Annoying_Fan-Sheet_12
+  - first:
+      213: 7620521990215555858
+    second: Annoying_Fan-Sheet_13
+  - first:
+      213: 5823576438857112144
+    second: Annoying_Fan-Sheet_14
+  - first:
+      213: 3802012461523667229
+    second: Annoying_Fan-Sheet_15
+  - first:
+      213: 7618820008471071800
+    second: Annoying_Fan-Sheet_16
+  - first:
+      213: -5465589957518199828
+    second: Annoying_Fan-Sheet_17
+  - first:
+      213: 8524011781665360451
+    second: Annoying_Fan-Sheet_18
+  - first:
+      213: -6960245606177824705
+    second: Annoying_Fan-Sheet_19
+  - first:
+      213: -6164492104930919470
+    second: Annoying_Fan-Sheet_20
+  - first:
+      213: -791413301111607612
+    second: Annoying_Fan-Sheet_21
+  - first:
+      213: 119881725597153201
+    second: Annoying_Fan-Sheet_22
+  - first:
+      213: -8231539212933605323
+    second: Annoying_Fan-Sheet_23
+  - first:
+      213: -747580286147844967
+    second: Annoying_Fan-Sheet_24
+  - first:
+      213: 174728386054928229
+    second: Annoying_Fan-Sheet_25
+  - first:
+      213: 6236597068954058337
+    second: Annoying_Fan-Sheet_26
+  - first:
+      213: -4670642691647345255
+    second: Annoying_Fan-Sheet_27
+  - first:
+      213: -2149419823594955697
+    second: Annoying_Fan-Sheet_28
+  - first:
+      213: -938608549622378429
+    second: Annoying_Fan-Sheet_29
+  - first:
+      213: 8763792630681402143
+    second: Annoying_Fan-Sheet_30
+  - first:
+      213: 9180735043859920735
+    second: Annoying_Fan-Sheet_31
+  - first:
+      213: 7858402137048823590
+    second: Annoying_Fan-Sheet_32
+  - first:
+      213: -5257524057842242032
+    second: Annoying_Fan-Sheet_33
+  - first:
+      213: 2749675312094363440
+    second: Annoying_Fan-Sheet_34
+  - first:
+      213: -3251398874362785236
+    second: Annoying_Fan-Sheet_35
+  - first:
+      213: 3218548252154529417
+    second: Annoying_Fan-Sheet_36
+  - first:
+      213: -3950741098156035138
+    second: Annoying_Fan-Sheet_37
+  - first:
+      213: 1641062438191723050
+    second: Annoying_Fan-Sheet_38
+  - first:
+      213: 2047054341367883436
+    second: Annoying_Fan-Sheet_39
+  - first:
+      213: -7227025938389620194
+    second: Annoying_Fan-Sheet_40
+  - first:
+      213: 2362340608931836822
+    second: Annoying_Fan-Sheet_41
+  - first:
+      213: 8100134776859708499
+    second: Annoying_Fan-Sheet_42
+  - first:
+      213: 1765547848677161755
+    second: Annoying_Fan-Sheet_43
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 416
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0707178da69d47900800000000000000
+      internalID: 681408496560861296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 416
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457262b5377cdebe0800000000000000
+      internalID: -1446280607051667628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 416
+        width: 12
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5582efdf345698a00800000000000000
+      internalID: 759249354887145557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 416
+        width: 12
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e615368892a4b6390800000000000000
+      internalID: -7824078385383779986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 384
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788d4d8dbd970f320800000000000000
+      internalID: 2589703770880661639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 384
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65a6b53c110d7bb0800000000000000
+      internalID: -4936788395856321171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 384
+        width: 15
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d01af11d4174910800000000000000
+      internalID: 1821447462706023727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 384
+        width: 15
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5b66f0a2fa22d40800000000000000
+      internalID: 5558197485310490038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 352
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d4175ea83f1a7d0800000000000000
+      internalID: -2908776106424185594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 352
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5eb5a2722a29cbf0800000000000000
+      internalID: -303665172430078374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 352
+        width: 12
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13085c30515f39100800000000000000
+      internalID: 113703886220787761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 352
+        width: 12
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bcdd0bd90bc4a560800000000000000
+      internalID: 7324202137201532085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 320
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222246790c8811a50800000000000000
+      internalID: 6490118898772615714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 320
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bd9d5ff5881c960800000000000000
+      internalID: 7620521990215555858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 320
+        width: 15
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a9960aaef71d050800000000000000
+      internalID: 5823576438857112144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 320
+        width: 15
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d190ab8903673c430800000000000000
+      internalID: 3802012461523667229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 288
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c8e847e6c7bb960800000000000000
+      internalID: 7618820008471071800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 288
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce37f2e34e25624b0800000000000000
+      internalID: -5465589957518199828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 288
+        width: 12
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a8863ad8f5b4670800000000000000
+      internalID: 8524011781665360451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 288
+        width: 12
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f302c468f7d386f90800000000000000
+      internalID: -6960245606177824705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 256
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db74e86713537aa0800000000000000
+      internalID: -6164492104930919470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 256
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce29b4bbc55405f0800000000000000
+      internalID: -791413301111607612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 256
+        width: 15
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b777455bc7e9a100800000000000000
+      internalID: 119881725597153201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 256
+        width: 15
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538d46ac2b2b3cd80800000000000000
+      internalID: -8231539212933605323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 224
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994a21bc0bf00a5f0800000000000000
+      internalID: -747580286147844967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 224
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5673bf69a82cc6200800000000000000
+      internalID: 174728386054928229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 224
+        width: 12
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ebf36cdf7dc8650800000000000000
+      internalID: 6236597068954058337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 224
+        width: 12
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99de593d73b8e2fb0800000000000000
+      internalID: -4670642691647345255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 192
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c907dfe0abb22e0800000000000000
+      internalID: -2149419823594955697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 192
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3401d904f7469f2f0800000000000000
+      internalID: -938608549622378429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 192
+        width: 15
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b73fc07fe3f9970800000000000000
+      internalID: 8763792630681402143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 192
+        width: 15
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57304a71e5886f70800000000000000
+      internalID: 9180735043859920735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 128
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62737f8ab17ae0d60800000000000000
+      internalID: 7858402137048823590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 128
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e2e3699b58907b0800000000000000
+      internalID: -5257524057842242032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 128
+        width: 15
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fbb01c02fc82620800000000000000
+      internalID: 2749675312094363440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 128
+        width: 15
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22508e43f5b0e2d0800000000000000
+      internalID: -3251398874362785236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 64
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986002e25949aac20800000000000000
+      internalID: 3218548252154529417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 64
+        width: 20
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb37fd437e52c29c0800000000000000
+      internalID: -3950741098156035138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 64
+        width: 15
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2277a2c79936c610800000000000000
+      internalID: 1641062438191723050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 64
+        width: 15
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca66725e319986c10800000000000000
+      internalID: 2047054341367883436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1aa0cf033274bb90800000000000000
+      internalID: -7227025938389620194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 20
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693bcd18448b8c020800000000000000
+      internalID: 2362340608931836822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 15
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35cc287c9a5796070800000000000000
+      internalID: 8100134776859708499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Annoying_Fan-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 15
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b7b520a6c708810800000000000000
+      internalID: 1765547848677161755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
