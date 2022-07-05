@@ -11,6 +11,10 @@ public class EnteredRoom : MonoBehaviour
     private Transform doorDown;
     private Transform doorRight;
     private Transform doorLeft;
+    private Transform doorUp2;
+    private Transform doorDown2;
+    private Transform doorRight2;
+    private Transform doorLeft2;
 
     void Start()
     {
@@ -27,12 +31,16 @@ public class EnteredRoom : MonoBehaviour
                 EventManager.PlayerEnteredRoom();
             }
             int numChild = Parent.childCount;
-            doorUp = Parent.GetChild(numChild - 1).Find("TopDoor");
-            doorDown = Parent.GetChild(numChild - 1).Find("BottomDoor");
-            doorLeft = Parent.GetChild(numChild - 1).Find("LeftDoor");
-            doorRight = Parent.GetChild(numChild - 1).Find("RightDoor");
+            doorUp = Parent.Find("TopDoor(Clone)");
+            doorDown = Parent.Find("BottomDoor(Clone)");
+            doorLeft = Parent.Find("LeftDoor(Clone)");
+            doorRight = Parent.Find("RightDoor(Clone)");
+            doorUp2 = Parent.Find("TopDoor");
+            doorDown2 = Parent.Find("BottomDoor");
+            doorLeft2 = Parent.Find("LeftDoor");
+            doorRight2 = Parent.Find("RightDoor");
 
-            if(doorUp != null) 
+            if (doorUp != null) 
             {
                 DoorScript door = doorUp.gameObject.GetComponent<DoorScript>();
                 door.triggerCollider.enabled = true;
@@ -50,6 +58,26 @@ public class EnteredRoom : MonoBehaviour
             if (doorLeft != null)
             {
                 DoorScript door = doorLeft.gameObject.GetComponent<DoorScript>();
+                door.triggerCollider.enabled = true;
+            }
+            if (doorUp2 != null)
+            {
+                DoorScript door = doorUp2.gameObject.GetComponent<DoorScript>();
+                door.triggerCollider.enabled = true;
+            }
+            if (doorDown2 != null)
+            {
+                DoorScript door = doorDown2.gameObject.GetComponent<DoorScript>();
+                door.triggerCollider.enabled = true;
+            }
+            if (doorRight2 != null)
+            {
+                DoorScript door = doorRight2.gameObject.GetComponent<DoorScript>();
+                door.triggerCollider.enabled = true;
+            }
+            if (doorLeft2 != null)
+            {
+                DoorScript door = doorLeft2.gameObject.GetComponent<DoorScript>();
                 door.triggerCollider.enabled = true;
             }
         }

@@ -9,21 +9,35 @@ public class E_Spawner : MonoBehaviour
     public int maxEnemies;
     private int randNumEnemies;
 
-    Vector2 targetCircleCenter;
+    private float PosibleX;
+    private float PosibleY;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        targetCircleCenter = new Vector2(transform.position.x, transform.position.y);
-
         randNumEnemies = Random.Range(1, maxEnemies + 1); //limite superior exclusivo e inferior inclusivo.
         for (int i = 0; i < randNumEnemies; i++)
         {
-            Vector2 pos = targetCircleCenter + Random.insideUnitCircle * Random.Range(10, 50);
+            PosibleX = Random.Range(-237f, 237f);
+            PosibleY = Random.Range(-101f, 101f);
+
+            while ((PosibleX > -80f && PosibleX < 80f && PosibleY > 41f) || (PosibleX > -80f && PosibleX < 80f && PosibleY < -41f))
+            {
+                PosibleX = Random.Range(-237f, 237f);
+            }
+            while ((PosibleY > -49f && PosibleY < 49f && PosibleX > 120f) || (PosibleY > -49f && PosibleY < 49f && PosibleX < -120f))
+            {
+                PosibleY = Random.Range(-101f, 101f);
+            }
+
+            Vector2 pos = new Vector2(transform.position.x + PosibleX, transform.position.y + PosibleY);
+            
             GameObject child = Instantiate(spawnPoints[0], pos, Quaternion.identity);
             child.transform.parent = transform;
         }
     }
+
+
 
 }

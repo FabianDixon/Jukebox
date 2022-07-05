@@ -16,7 +16,6 @@ public class stalker_movement : MonoBehaviour
     private Transform player;
     private SpriteRenderer _renderer;
 
-    private bool isPlayer = false;
     private float idle = 0f;
 
     private float relPos;
@@ -31,7 +30,7 @@ public class stalker_movement : MonoBehaviour
 
         Initalspeed = speedStat.speed;
 
-        EventManager.enteredRoomEvent += startMoving;
+        //EventManager.enteredRoomEvent += startMoving;
     }
 
     // Update is called once per frame
@@ -39,7 +38,7 @@ public class stalker_movement : MonoBehaviour
     {
         if (isPlayerInRoom == true)
         {
-            if (isPlayer && player != null)
+            if (player != null)
             {
                 movement.x = (player.position.x - rb.position.x);
                 movement.y = (player.position.y - rb.position.y);
@@ -79,17 +78,6 @@ public class stalker_movement : MonoBehaviour
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            isPlayer = true;
-            player = GameObject.FindGameObjectWithTag("Player").transform;
-            relPos = player.position.x - transform.position.x;
-            speed = Initalspeed;
-        }
-    }
     void OnEnable()
     {
         EventManager.enteredRoomEvent += startMoving;
@@ -101,8 +89,17 @@ public class stalker_movement : MonoBehaviour
     }
     private void startMoving()
     {
-        isPlayerInRoom = true;
+        StartCoroutine(waitForMove());
         EventManager.enteredRoomEvent -= startMoving;
+    }
+
+    IEnumerator waitForMove()
+    {
+        yield return new WaitForSeconds(0.5f);
+        isPlayerInRoom = true;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        relPos = player.position.x - transform.position.x;
+        speed = Initalspeed;
     }
 
 }
