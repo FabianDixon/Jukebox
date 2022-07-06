@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d58bf3f9e1352be408ea02092c427f59, type: 3}
   m_Name: SemiCorchea
   m_EditorClassIdentifier: 
-  speed: 75
+  speed: 100
   damage: 20
-  distance: 50
+  distance: 100

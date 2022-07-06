@@ -18,6 +18,7 @@ public class Shooting : MonoBehaviour
     public float force;
     public float power;
     public float distance;
+    public float range;
     public float speed;
     public float bulletSize;
 
@@ -39,6 +40,7 @@ public class Shooting : MonoBehaviour
         force = Stat.damage * dynamics.dmgModifier;
         power = Stat.damage;
         distance = Stat.projectileDistance * dynamics.rangeModifier;
+        range = Stat.projectileDistance;
         speed = Stat.projectileSpeed * dynamics.speedModifier;
         bulletSize = dynamics.sizeModifier;
         fireRate = currentWeapon.GetComponent<Stats>()._FireRate + dynamics.fireRateModifier;
@@ -94,7 +96,7 @@ public class Shooting : MonoBehaviour
 
     IEnumerator waitToShoot(float rateOfFire)
     {
-        float secondsToShoot = 1f / rateOfFire;
+        float secondsToShoot = 0.5f / rateOfFire;
         yield return new WaitForSeconds(secondsToShoot);
         readyToFire = true;
     }
@@ -103,7 +105,7 @@ public class Shooting : MonoBehaviour
         //1 facing right, 2 facing down, 3 facing left, 4 facing up  
     {
         force = power * dynamics.dmgModifier;
-        distance = Stat.projectileDistance * dynamics.rangeModifier;
+        distance = range * dynamics.rangeModifier;
         speed = Stat.projectileSpeed * dynamics.speedModifier;
         bulletSize = dynamics.sizeModifier;      
 
@@ -149,6 +151,16 @@ public class Shooting : MonoBehaviour
     public void LooseFireRate(float fireRateLoss)
     {
         fRate -= fireRateLoss;
+    }
+
+    public void GainRange(float extraRange)
+    {
+        range += extraRange;
+    }
+
+    public void LooseRange(float RangeLoss)
+    {
+        range -= RangeLoss;
     }
 
     public void SwitchProjectile(GameObject NewWeapon, GameObject newProjectile)

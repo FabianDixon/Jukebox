@@ -545,19 +545,19 @@ PrefabInstance:
     - target: {fileID: 2017197131511784729, guid: cd2e77f9ac6236342b71282f0dbd083d, type: 3}
       propertyPath: bossRooms.Array.data[0]
       value: 
-      objectReference: {fileID: 6665154061812910286, guid: f663cfabc7ed19f4c8cf256319116bcc, type: 3}
+      objectReference: {fileID: 6709588966967494365, guid: 16914a23a7b244347994bb628d538c93, type: 3}
     - target: {fileID: 2017197131511784729, guid: cd2e77f9ac6236342b71282f0dbd083d, type: 3}
       propertyPath: bossRooms.Array.data[1]
       value: 
-      objectReference: {fileID: 1710109788507112011, guid: 24fb84352cebe5645b0908c395f089ed, type: 3}
+      objectReference: {fileID: 6655469369378346161, guid: 1cfc792358db9114fbe60506042bf097, type: 3}
     - target: {fileID: 2017197131511784729, guid: cd2e77f9ac6236342b71282f0dbd083d, type: 3}
       propertyPath: bossRooms.Array.data[2]
       value: 
-      objectReference: {fileID: 4776301891018533095, guid: 691549e3dae1c744aa4cd929e9604946, type: 3}
+      objectReference: {fileID: 5565333725429409197, guid: 9d9b6b57551395845ac398131c3f3781, type: 3}
     - target: {fileID: 2017197131511784729, guid: cd2e77f9ac6236342b71282f0dbd083d, type: 3}
       propertyPath: bossRooms.Array.data[3]
       value: 
-      objectReference: {fileID: 7678446906216606816, guid: aecafee6c971c4040a3328940fb5d77d, type: 3}
+      objectReference: {fileID: 6772634761467587030, guid: 36cbd5ed78ff68041b0bab3276a050f0, type: 3}
     - target: {fileID: 2017197131511784729, guid: cd2e77f9ac6236342b71282f0dbd083d, type: 3}
       propertyPath: leftRooms.Array.data[0]
       value: 

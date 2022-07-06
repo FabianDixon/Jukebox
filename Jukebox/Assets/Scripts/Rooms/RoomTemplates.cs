@@ -43,7 +43,7 @@ public class RoomTemplates : MonoBehaviour
 
 	private GameObject[] UItoDestroy;
 
-	void Update()
+    void Update()
     {
         if (count == true)
         {
@@ -88,6 +88,8 @@ public class RoomTemplates : MonoBehaviour
 				BossR = Instantiate(bossRooms[3], lastRoom.transform.position, lastRoom.transform.rotation);
 			}
 			BossR.transform.parent = null;
+			
+			//BossR.transform.FindGameObjectWithTag("BossRoom").SetActive(false);
 			rooms.Remove(lastRoom);
 			Destroy(lastRoom.gameObject);
 			bossRoom = true;
@@ -162,19 +164,24 @@ public class RoomTemplates : MonoBehaviour
         //After rooms are created disable all rooms except the first one and then enable them as the player goes in, while disabling them when the player moves out.
         if (disableRooms == false && treasureRoom == true)
         {
-            for (int i = 1; i < rooms.Count; i++)
+			for (int i = 1; i < rooms.Count; i++)
             {
 				room = rooms[i];
                 room.SetActive(false);
 			}
-			StartCoroutine(waiter());
-			BossR.SetActive(false);
+			//EventManager.finishedLoadingLevel += DisableBossRoom;
 			disableRooms = true;
-			EventManager.levelConstructed();
+            EventManager.levelConstructed();
 		}
     }
 
-	public void RemoveFromlistTreasure(string itemName)
+  //  void DisableBossRoom()
+  //  {
+		//BossR.transform.GetChild(BossR.transform.childCount - 1).gameObject.SetActive(false);
+  //      EventManager.finishedLoadingLevel -= DisableBossRoom;
+  //  }
+
+    public void RemoveFromlistTreasure(string itemName)
     {
 		StringBuilder sb = new StringBuilder();
 		string newName;
@@ -204,10 +211,4 @@ public class RoomTemplates : MonoBehaviour
 			}
         }
 	}
-
-	IEnumerator waiter()
-	{
-		yield return new WaitForSeconds(1f);
-	}
-
 }
