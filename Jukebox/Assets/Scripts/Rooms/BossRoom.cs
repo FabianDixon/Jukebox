@@ -5,9 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BossRoom : MonoBehaviour
 {
-    List<AsyncOperation> scenesToLoad = new List<AsyncOperation>();
 
-    // Start is called before the first frame update
     void Start()
     {
         EventManager.bossRoomClearEvent += LoadNextLevel;
@@ -34,27 +32,13 @@ public class BossRoom : MonoBehaviour
         EventManager.bossRoomCompleted();
     }
 
-    void LoadNextLevel()
+    void EndScreen()
     {
-        scenesToLoad.Add(SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1));
-        StartCoroutine(LoadingScreen());
+        EventManager.OnPlayerDeath();
     }
 
-    IEnumerator LoadingScreen()
+    void LoadNextLevel()
     {
-        float totalProgress = 0;
-        for (int i = 0; i < scenesToLoad.Count; i++)
-        {
-            while (!scenesToLoad[i].isDone)
-            {
-                totalProgress += scenesToLoad[i].progress;
-
-                scenesToLoad[i].allowSceneActivation = false;
-                yield return new WaitForSeconds(4);
-                scenesToLoad[i].allowSceneActivation = true;
-
-                yield return null;
-            }
-        }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

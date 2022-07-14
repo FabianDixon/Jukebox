@@ -1,0 +1,1260 @@
+fileFormatVersion: 2
+guid: dc10eee9986d4d6458684a2f6c42c67b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8954939025232363402
+    second: Character1_Guitar_WalkSheet_0
+  - first:
+      213: -3201042586692196281
+    second: Character1_Guitar_WalkSheet_1
+  - first:
+      213: 3781592848025532453
+    second: Character1_Guitar_WalkSheet_2
+  - first:
+      213: -853478516748258233
+    second: Character1_Guitar_WalkSheet_3
+  - first:
+      213: -1837442935327790710
+    second: Character1_Guitar_WalkSheet_4
+  - first:
+      213: -2129491475792389443
+    second: Character1_Guitar_WalkSheet_5
+  - first:
+      213: -5947165270477173955
+    second: Character1_Guitar_WalkSheet_6
+  - first:
+      213: 4346744786693332139
+    second: Character1_Guitar_WalkSheet_7
+  - first:
+      213: -3634707838070829512
+    second: Character1_Guitar_WalkSheet_8
+  - first:
+      213: 2297780460253366695
+    second: Character1_Guitar_WalkSheet_9
+  - first:
+      213: -3927277867994659302
+    second: Character1_Guitar_WalkSheet_10
+  - first:
+      213: -6468506260803507154
+    second: Character1_Guitar_WalkSheet_11
+  - first:
+      213: 5477525613440742126
+    second: Character1_Guitar_WalkSheet_12
+  - first:
+      213: -6747092185095906181
+    second: Character1_Guitar_WalkSheet_13
+  - first:
+      213: -3877752075578485463
+    second: Character1_Guitar_WalkSheet_14
+  - first:
+      213: 7407547000289620514
+    second: Character1_Guitar_WalkSheet_15
+  - first:
+      213: 7707357418415138609
+    second: Character1_Guitar_WalkSheet_16
+  - first:
+      213: -8289789236974337103
+    second: Character1_Guitar_WalkSheet_17
+  - first:
+      213: 5931962993315713343
+    second: Character1_Guitar_WalkSheet_18
+  - first:
+      213: -5345707858592160193
+    second: Character1_Guitar_WalkSheet_19
+  - first:
+      213: 4230556333200818902
+    second: Character1_Guitar_WalkSheet_20
+  - first:
+      213: -6144871857658248585
+    second: Character1_Guitar_WalkSheet_21
+  - first:
+      213: -5755479918285820917
+    second: Character1_Guitar_WalkSheet_22
+  - first:
+      213: 1755373965465640944
+    second: Character1_Guitar_WalkSheet_23
+  - first:
+      213: -564929553610979735
+    second: Character1_Guitar_WalkSheet_24
+  - first:
+      213: 2177268370549561494
+    second: Character1_Guitar_WalkSheet_25
+  - first:
+      213: -3514692416169820667
+    second: Character1_Guitar_WalkSheet_26
+  - first:
+      213: 2770582152992680689
+    second: Character1_Guitar_WalkSheet_27
+  - first:
+      213: -1667073460141109636
+    second: Character1_Guitar_WalkSheet_28
+  - first:
+      213: -4248128235021711556
+    second: Character1_Guitar_WalkSheet_29
+  - first:
+      213: -7061542759201244922
+    second: Character1_Guitar_WalkSheet_30
+  - first:
+      213: -9104099781918922826
+    second: Character1_Guitar_WalkSheet_31
+  - first:
+      213: 3974239006367875733
+    second: Character1_Guitar_WalkSheet_32
+  - first:
+      213: -4470205900097105616
+    second: Character1_Guitar_WalkSheet_33
+  - first:
+      213: -1430442042825777302
+    second: Character1_Guitar_WalkSheet_34
+  - first:
+      213: 787591582698292447
+    second: Character1_Guitar_WalkSheet_35
+  - first:
+      213: -8026112449942682114
+    second: Character1_Guitar_WalkSheet_36
+  - first:
+      213: -2575978598392174249
+    second: Character1_Guitar_WalkSheet_37
+  - first:
+      213: 3113872876972847895
+    second: Character1_Guitar_WalkSheet_38
+  - first:
+      213: -25656710045179367
+    second: Character1_Guitar_WalkSheet_39
+  - first:
+      213: 7509120081168426449
+    second: Character1_Guitar_WalkSheet_40
+  - first:
+      213: 1104907302726800854
+    second: Character1_Guitar_WalkSheet_41
+  - first:
+      213: -4996937492622161946
+    second: Character1_Guitar_WalkSheet_42
+  - first:
+      213: -1038416256534384563
+    second: Character1_Guitar_WalkSheet_43
+  - first:
+      213: -4891087532183657523
+    second: Character1_Guitar_WalkSheet_44
+  - first:
+      213: 2596301895174236780
+    second: Character1_Guitar_WalkSheet_45
+  - first:
+      213: -4412183155305718562
+    second: Character1_Guitar_WalkSheet_46
+  - first:
+      213: 5061726218164063287
+    second: Character1_Guitar_WalkSheet_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 398
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ff1402995564c70800000000000000
+      internalID: 8954939025232363402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 398
+        width: 33
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748605d2abc9393d0800000000000000
+      internalID: -3201042586692196281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 398
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52838b7d8aaea7430800000000000000
+      internalID: 3781592848025532453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 398
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744fac99fc5d724f0800000000000000
+      internalID: -853478516748258233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 362
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a896cb0b2671086e0800000000000000
+      internalID: -1837442935327790710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 362
+        width: 33
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba1c2909c68272e0800000000000000
+      internalID: -2129491475792389443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_6
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 362
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b0ba822bc677da0800000000000000
+      internalID: -5947165270477173955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_7
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 362
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac132c7a5db25c30800000000000000
+      internalID: 4346744786693332139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 326
+        width: 32
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ec5719a7cee8dc0800000000000000
+      internalID: -3634707838070829512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 326
+        width: 33
+        height: 33
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a94c39872b53ef10800000000000000
+      internalID: 2297780460253366695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_10
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 326
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16ccef26918f79c0800000000000000
+      internalID: -3927277867994659302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_11
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 326
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2caa61d3df3b36a0800000000000000
+      internalID: -6468506260803507154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 290
+        width: 32
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee23d353684140c40800000000000000
+      internalID: 5477525613440742126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 290
+        width: 33
+        height: 33
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c5b80c7638d52a0800000000000000
+      internalID: -6747092185095906181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_14
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 290
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9255c1058057f2ac0800000000000000
+      internalID: -3877752075578485463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_15
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 290
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222f549ffb4ecc660800000000000000
+      internalID: 7407547000289620514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_16
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 254
+        width: 32
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1372b999cb806fa60800000000000000
+      internalID: 7707357418415138609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_17
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 254
+        width: 33
+        height: 33
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3c9433c90c4fc80800000000000000
+      internalID: -8289789236974337103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_18
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 254
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31985dd9e0925250800000000000000
+      internalID: 5931962993315713343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_19
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 254
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36a99f760b30d5b0800000000000000
+      internalID: -5345707858592160193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 218
+        width: 32
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2c6b21294f5ba30800000000000000
+      internalID: 4230556333200818902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_21
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 218
+        width: 33
+        height: 33
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7724cf53a9709baa0800000000000000
+      internalID: -6144871857658248585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_22
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 218
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ceda6128d6020b0800000000000000
+      internalID: -5755479918285820917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_23
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 218
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff5c8b32575c5810800000000000000
+      internalID: 1755373965465640944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 182
+        width: 32
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966c5e96097f828f0800000000000000
+      internalID: -564929553610979735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_25
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 182
+        width: 33
+        height: 33
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698dc4f1c06373e10800000000000000
+      internalID: 2177268370549561494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_26
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 182
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e307f7edd493fc0800000000000000
+      internalID: -3514692416169820667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_27
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 182
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa6a2af9c5137620800000000000000
+      internalID: 2770582152992680689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_28
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 146
+        width: 32
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ecec1458d5dd8e0800000000000000
+      internalID: -1667073460141109636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_29
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 146
+        width: 33
+        height: 33
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c374937b0ed9b05c0800000000000000
+      internalID: -4248128235021711556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_30
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 146
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609f39f264c500e90800000000000000
+      internalID: -7061542759201244922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_31
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 146
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7e203eb7db7a180800000000000000
+      internalID: -9104099781918922826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_32
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 110
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5920f03e155572730800000000000000
+      internalID: 3974239006367875733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_33
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 110
+        width: 33
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0315bd30b63a6f1c0800000000000000
+      internalID: -4470205900097105616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_34
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 110
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fd5957a8c062ce0800000000000000
+      internalID: -1430442042825777302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_35
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 110
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4c1d22f561eea00800000000000000
+      internalID: 787591582698292447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_36
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 74
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef583dd30458d9090800000000000000
+      internalID: -8026112449942682114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_37
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 74
+        width: 33
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75963d5ec19404cd0800000000000000
+      internalID: -2575978598392174249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_38
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 74
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713b0b332e2b63b20800000000000000
+      internalID: 3113872876972847895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_39
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 74
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912e6afab59d4aff0800000000000000
+      internalID: -25656710045179367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_40
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 38
+        width: 32
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5ebc5cde0c53860800000000000000
+      internalID: 7509120081168426449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_41
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 38
+        width: 33
+        height: 33
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d514c8765b655f00800000000000000
+      internalID: 1104907302726800854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_42
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 38
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7cc6b43df47aab0800000000000000
+      internalID: -4996937492622161946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_43
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 38
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40f64c9aedc691f0800000000000000
+      internalID: -1038416256534384563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_44
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2
+        width: 32
+        height: 33
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3e9d6bdcd5f1cb0800000000000000
+      internalID: -4891087532183657523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_45
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2
+        width: 33
+        height: 33
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6aa88f51dae70420800000000000000
+      internalID: 2596301895174236780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_46
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 2
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc5a080cc6c4c2c0800000000000000
+      internalID: -4412183155305718562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character1_Guitar_WalkSheet_47
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 2
+        width: 26
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c43ff5d2dde3640800000000000000
+      internalID: 5061726218164063287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

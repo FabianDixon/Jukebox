@@ -187,7 +187,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 3556198024620363970, guid: 9126c9b2ef0579849a5304135aaccb3b, type: 3}
+  m_Sprite: {fileID: -5377229951261050344, guid: 5a3ca618305aebd4bbac46a5005a9b66, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -333,11 +333,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Stat: {fileID: 11400000, guid: 18a589a4c5286544ab7dd1de5f29fad9, type: 2}
   firePoint: {fileID: 6472937899634532196}
-  currentWeapon: {fileID: 8490491431147551576, guid: 89831c2517ea4894088c8a4836e9ecaf, type: 3}
+  currentWeapon: {fileID: 827038022092340206, guid: 0b8b72b4ee9788744a7ef516410ad56d, type: 3}
   BulletPrefab: {fileID: 8578113758673341334, guid: 8bd1ff634690cea40abb57109eb95839, type: 3}
   force: 0
   power: 0
   distance: 0
+  range: 0
   speed: 0
   bulletSize: 0
   fireRate: 0

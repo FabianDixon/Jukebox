@@ -568,7 +568,7 @@ PrefabInstance:
       objectReference: {fileID: 79777651498126638, guid: 869f887ee12accc4ab37ab15abe1bf21, type: 3}
     - target: {fileID: 2017197131511784729, guid: cd2e77f9ac6236342b71282f0dbd083d, type: 3}
       propertyPath: listTreasure.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2017197131511784729, guid: cd2e77f9ac6236342b71282f0dbd083d, type: 3}
       propertyPath: rightRooms.Array.data[0]
@@ -602,6 +602,10 @@ PrefabInstance:
       propertyPath: listTreasure.Array.data[3]
       value: 
       objectReference: {fileID: 7792009629769887641, guid: c65917b89e27b8b48bc03cf9a404ffe7, type: 3}
+    - target: {fileID: 2017197131511784729, guid: cd2e77f9ac6236342b71282f0dbd083d, type: 3}
+      propertyPath: listTreasure.Array.data[4]
+      value: 
+      objectReference: {fileID: 827038022092340206, guid: 0b8b72b4ee9788744a7ef516410ad56d, type: 3}
     - target: {fileID: 2051557699183192396, guid: cd2e77f9ac6236342b71282f0dbd083d, type: 3}
       propertyPath: m_Name
       value: RoomTemplates

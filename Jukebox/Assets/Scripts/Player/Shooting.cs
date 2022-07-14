@@ -33,6 +33,8 @@ public class Shooting : MonoBehaviour
 
     private bool readyToFire = true;
 
+    private RoomTemplates templates;
+
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
@@ -43,51 +45,58 @@ public class Shooting : MonoBehaviour
         range = Stat.projectileDistance;
         speed = Stat.projectileSpeed * dynamics.speedModifier;
         bulletSize = dynamics.sizeModifier;
+       
         fireRate = currentWeapon.GetComponent<Stats>()._FireRate + dynamics.fireRateModifier;
-        fRate = fireRate;
-
         currentWeapon.transform.parent = null;
+
+        templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
+        templates.RemoveFromlistTreasure(currentWeapon.name);
 
         weaponSprite = currentWeapon.GetComponent<SpriteRenderer>();
 
         weaponUI = GameObject.FindGameObjectWithTag("Weapon_UI").GetComponent<Image>();
         weaponUI.sprite = weaponSprite.sprite;
+
+        fRate = fireRate;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("right") && readyToFire == true)
+        if (BulletPrefab != null)
         {
-            direction = 1;
-            Shoot(1);
-            shoot = 0.1f;
-            readyToFire = false;
-            StartCoroutine(waitToShoot(fireRate));
-        }
-        else if (Input.GetKey("down") && readyToFire == true)
-        {
-            direction = 2;
-            Shoot(2);
-            shoot = 0.6f;
-            readyToFire = false;
-            StartCoroutine(waitToShoot(fireRate));
-        }
-        else if (Input.GetKey("left") && readyToFire == true)
-        {
-            direction = 3;
-            Shoot(3);
-            shoot = 0.85f;
-            readyToFire = false;
-            StartCoroutine(waitToShoot(fireRate));
-        }
-        else if (Input.GetKey("up") && readyToFire == true)
-        {
-            direction = 4;
-            Shoot(4);
-            shoot = 1.1f;
-            readyToFire = false;
-            StartCoroutine(waitToShoot(fireRate));
+            if (Input.GetKey("right") && readyToFire == true)
+            {
+                direction = 1;
+                Shoot(1);
+                shoot = 0.1f;
+                readyToFire = false;
+                StartCoroutine(waitToShoot(fireRate));
+            }
+            else if (Input.GetKey("down") && readyToFire == true)
+            {
+                direction = 2;
+                Shoot(2);
+                shoot = 0.6f;
+                readyToFire = false;
+                StartCoroutine(waitToShoot(fireRate));
+            }
+            else if (Input.GetKey("left") && readyToFire == true)
+            {
+                direction = 3;
+                Shoot(3);
+                shoot = 0.85f;
+                readyToFire = false;
+                StartCoroutine(waitToShoot(fireRate));
+            }
+            else if (Input.GetKey("up") && readyToFire == true)
+            {
+                direction = 4;
+                Shoot(4);
+                shoot = 1.1f;
+                readyToFire = false;
+                StartCoroutine(waitToShoot(fireRate));
+            }
         }
 
         fireRate = fRate + dynamics.fireRateModifier;
@@ -173,5 +182,8 @@ public class Shooting : MonoBehaviour
 
         weaponSprite = currentWeapon.GetComponent<SpriteRenderer>();
         weaponUI.sprite = weaponSprite.sprite;
+
+        fireRate = currentWeapon.GetComponent<Stats>()._FireRate + dynamics.fireRateModifier;
+        fRate = fireRate;
     }
 }

@@ -143,7 +143,9 @@ public class RoomTemplates : MonoBehaviour
 								break;
 							case "Background":
 								break;
-                            default:
+							case "EnterRoom":
+								break;
+							default:
 								Destroy(room.transform.GetChild(j).gameObject);
                                 break;
                         }

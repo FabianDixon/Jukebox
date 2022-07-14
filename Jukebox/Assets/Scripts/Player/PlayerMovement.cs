@@ -83,6 +83,15 @@ public class PlayerMovement : MonoBehaviour
         speed -= speedLost;
     }
 
+    void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;

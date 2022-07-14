@@ -5,6 +5,15 @@ using UnityEngine;
 public class WeaponSwap : MonoBehaviour
 {
     [SerializeField] private GameObject ProjectilePrefab;
+    [SerializeField] private int weaponLayer;
+    [SerializeField] private int weaponType;
+
+    private GameObject disposedWeapon;
+
+    public bool readyToPickUp = true;
+    private Shooting shooting;
+
+    private string[] weapons = {"Mic", "Guitar"};
 
     private RoomTemplates templates;
 
@@ -15,32 +24,64 @@ public class WeaponSwap : MonoBehaviour
         transform.parent = null;
 
         EventManager.bossRoomClearEvent += destroy;
+        StartCoroutine(waitToPickUp());
     }
 
-    void OnTriggerEnter2D(Collider2D trigger)
+    void OnCollisionEnter2D(Collision2D trigger)
     {
-        if (trigger.gameObject.tag == "Player")
+        if (trigger.gameObject.tag == "Player" && readyToPickUp == true)
         {
-            Shooting shooting = trigger.transform.GetComponent<Shooting>();
+            readyToPickUp = false;
+            shooting = trigger.transform.GetComponent<Shooting>();
             if (shooting != null)
             {
-                Vector2 targetCircleCenter = new Vector2(transform.position.x, transform.position.y);
-                shooting.currentWeapon.transform.position = targetCircleCenter + Random.insideUnitCircle * Random.Range(2, 20);
-                transform.position = new Vector3(15000, 0, 0);
+                disposedWeapon = shooting.currentWeapon;
+                if (disposedWeapon != null)
+                {
+                    Vector2 targetCircleCenter = new Vector2(transform.position.x, transform.position.y);
+                    shooting.currentWeapon.transform.position = targetCircleCenter + Random.insideUnitCircle * Random.Range(2, 20);
+
+                    StartCoroutine(waitToPickUp());
+                    transform.position = new Vector3(15000, 0, 0);
+                }
+                
                 shooting.SwitchProjectile(this.gameObject, ProjectilePrefab);
             }
             templates.RemoveFromlistTreasure(this.gameObject.name);
+
+            if (trigger.gameObject.GetComponent<Animator>() != null)
+            {
+                Animator playerAnimator = trigger.gameObject.GetComponent<Animator>();
+                weaponLayer = playerAnimator.GetLayerIndex(weapons[weaponType]);
+                for (int i = 0; i < playerAnimator.layerCount; i++)
+                {
+                    playerAnimator.SetLayerWeight(i, 0);
+                }
+                playerAnimator.SetLayerWeight(weaponLayer, 1);
+            }
 
             EventManager.roomCompleted();
         }
     }
 
+    IEnumerator waitToPickUp()
+    {
+        yield return new WaitForSeconds(1f);
+        if (disposedWeapon != null)
+        {
+            disposedWeapon.GetComponent<WeaponSwap>().readyToPickUp = true;
+        }
+    }
+
     void destroy()
     {
-        if (transform.parent.tag != "Player")
+        if (transform.parent != null)
         {
-            Destroy(this.gameObject);
-            EventManager.bossRoomClearEvent -= destroy;
+            if (transform.parent.tag != "Player")
+            {
+                Destroy(this.gameObject);
+                EventManager.bossRoomClearEvent -= destroy;
+            }
         }
     }
 }
