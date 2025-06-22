@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwvym25b82y1o"]
+
+[ext_resource type="Script" uid="uid://calsx7rw0xp4f" path="res://scripts/weapon.gd" id="1_lgu4e"]
+
+[node name="weapon" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_lgu4e")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

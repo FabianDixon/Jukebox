@@ -1,0 +1,68 @@
+[gd_scene load_steps=9 format=3 uid="uid://b2nk7g8t2gb86"]
+
+[ext_resource type="Texture2D" uid="uid://xhrxtjhs06a0" path="res://assets/Monsters/Annoying_Fan-Sheet.png" id="1_g4wsp"]
+[ext_resource type="Script" uid="uid://bv1ms820b6fva" path="res://scripts/annoying_fan.gd" id="2_jsmxh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jsmxh"]
+atlas = ExtResource("1_g4wsp")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ca2ea"]
+atlas = ExtResource("1_g4wsp")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srcqk"]
+atlas = ExtResource("1_g4wsp")
+region = Rect2(64, 128, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1mt1"]
+atlas = ExtResource("1_g4wsp")
+region = Rect2(64, 160, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3l8cp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jsmxh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ca2ea")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_srcqk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1mt1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vyl5l"]
+radius = 5.0
+
+[node name="AnnoyingFan" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_3l8cp")
+autoplay = "default"
+frame = 2
+frame_progress = 0.0425248
+script = ExtResource("2_jsmxh")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(1, 0)
+target_position = Vector2(11, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(1, 0)
+target_position = Vector2(-9, 0)
+
+[node name="area2d" type="Area2D" parent="."]
+position = Vector2(1, 0)
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="area2d"]
+shape = SubResource("CapsuleShape2D_vyl5l")
+
+[connection signal="body_entered" from="area2d" to="." method="_on_area_2d_body_entered"]
