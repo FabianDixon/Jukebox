@@ -29,7 +29,7 @@ func _ready():
 
 func _physics_process(_delta):
 	switchWeapon()
-		
+
 func pickupWeapon(pickUp: String):
 	previous_Weapon = current_Weapon
 	if pickUp == "guitar":

@@ -30,7 +30,7 @@ func play_animations(direction: Vector2):
 		1:
 			play_animations_Guitar(direction)
 		2:
-			pass
+			play_animations_Mic(direction)
 
 func play_animations_NoWeapon(direction: Vector2):
 	if direction == Vector2(0,0):
@@ -59,3 +59,17 @@ func play_animations_Guitar(direction: Vector2):
 		animated_sprite.play("Run_Down_Guitar")
 	elif direction == Vector2(0,-1):
 		animated_sprite.play("Run_Up_Guitar")
+
+func play_animations_Mic(direction: Vector2):
+	if direction == Vector2(0,0):
+		animated_sprite.play("Idle_Down_Mic")
+	elif direction == Vector2(1,0):
+		animated_sprite.flip_h = false
+		animated_sprite.play("Run_Right_Mic")
+	elif direction == Vector2(-1,0):
+		animated_sprite.flip_h = true
+		animated_sprite.play("Run_Right_Mic")
+	elif direction == Vector2(0,1):
+		animated_sprite.play("Run_Down_Mic")
+	elif direction == Vector2(0,-1):
+		animated_sprite.play("Run_Up_Mic")
