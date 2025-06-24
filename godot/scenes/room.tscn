@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://b8uo0j2ni7fr5"]
+
+[ext_resource type="Script" uid="uid://cgoos1flm7yfr" path="res://scripts/room.gd" id="1_36trf"]
+[ext_resource type="Texture2D" uid="uid://ju3diwiys61m" path="res://assets/Backgrounds/Background_Backstage.png" id="1_85yof"]
+[ext_resource type="PackedScene" uid="uid://cw38s58m0ds5a" path="res://scenes/door.tscn" id="2_ffxv4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_85yof"]
+size = Vector2(63.375, 360.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_14vil"]
+size = Vector2(359, 63)
+
+[node name="Room" type="Sprite2D"]
+texture = ExtResource("1_85yof")
+script = ExtResource("1_36trf")
+_door_scene = ExtResource("2_ffxv4")
+
+[node name="Left" type="StaticBody2D" parent="."]
+collision_mask = 22
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Left"]
+position = Vector2(-148, 0)
+shape = SubResource("RectangleShape2D_85yof")
+
+[node name="Top" type="StaticBody2D" parent="."]
+collision_mask = 22
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Top"]
+position = Vector2(-0.5, -148.5)
+shape = SubResource("RectangleShape2D_14vil")
+
+[node name="Bottom" type="StaticBody2D" parent="."]
+collision_mask = 22
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Bottom"]
+position = Vector2(5.73712e-08, 147.688)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_85yof")
+
+[node name="Right" type="StaticBody2D" parent="."]
+collision_mask = 22
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Right"]
+position = Vector2(148, 0)
+shape = SubResource("RectangleShape2D_85yof")

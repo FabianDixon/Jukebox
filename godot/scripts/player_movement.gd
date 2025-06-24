@@ -5,6 +5,7 @@ var SPEED: float = 120.0
 var input_direction = Vector2()
 var weaponState: int = 0
 @onready var player_manager: Node = $PlayerManager
+@onready var dungeon: Node2D = $"../Dungeon"
 
 func _physics_process(_delta):
 	SPEED = player_manager.player_speed
@@ -73,3 +74,8 @@ func play_animations_Mic(direction: Vector2):
 		animated_sprite.play("Run_Down_Mic")
 	elif direction == Vector2(0,-1):
 		animated_sprite.play("Run_Up_Mic")
+
+
+func _on_dungeon_start_room(startPos: Vector2i) -> void:
+	global_position.x = startPos.x
+	global_position.y = startPos.y

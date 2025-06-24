@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://cw38s58m0ds5a"]
+
+[ext_resource type="Texture2D" uid="uid://jgitfm4qeb1i" path="res://assets/Environment/Doors/Door_Perspective_Right.png" id="1_hpvv5"]
+[ext_resource type="Script" uid="uid://bim1o5evb8kar" path="res://scripts/door.gd" id="2_uvdjg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uvdjg"]
+size = Vector2(64, 145)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hpvv5"]
+size = Vector2(64, 70)
+
+[node name="Door" type="Sprite2D"]
+z_index = 1
+texture = ExtResource("1_hpvv5")
+flip_h = true
+script = ExtResource("2_uvdjg")
+
+[node name="doorWalls" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="doorWalls"]
+position = Vector2(0, -107)
+shape = SubResource("RectangleShape2D_uvdjg")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="doorWalls"]
+position = Vector2(0, 107)
+shape = SubResource("RectangleShape2D_uvdjg")
+
+[node name="Door" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
+shape = SubResource("RectangleShape2D_hpvv5")
+
+[node name="DoorArea" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 3
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="DoorArea"]
+shape = SubResource("RectangleShape2D_hpvv5")
+
+[connection signal="body_entered" from="DoorArea" to="." method="_on_door_area_body_entered"]
