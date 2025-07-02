@@ -3,11 +3,10 @@ var bullet_path = preload("res://scenes/bullet.tscn")
 var weaponState: int = 0
 var can_fire = true
 @onready var fire_rate = $FireRate
-@onready var player_manager: Node = $"../PlayerManager"
 @onready var player: CharacterBody2D = $".."
 
 func _physics_process(_delta: float) -> void:
-	fire_rate.wait_time = player_manager.fire_rate
+	fire_rate.wait_time = PlayerStats.fire_rate
 	get_input()
 	
 func get_input():

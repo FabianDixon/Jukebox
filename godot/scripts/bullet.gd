@@ -15,9 +15,9 @@ func _ready():
 	start_position = global_position
 
 func _physics_process(delta):
-	damage = get_parent().get_child(0).bullet_dmg
-	speed = get_parent().get_child(0).bullet_speed
-	bullet_range = get_parent().get_child(0).bullet_range
+	damage =PlayerStats.bullet_dmg
+	speed = PlayerStats.bullet_speed
+	bullet_range = PlayerStats.bullet_range
 	global_position += direction * speed * delta
 	distance_traveled = global_position.distance_to(start_position)
 	animated_sprite.play("default")

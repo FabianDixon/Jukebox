@@ -4,11 +4,10 @@ var SPEED: float = 120.0
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 var input_direction = Vector2()
 var weaponState: int = 0
-@onready var player_manager: Node = $PlayerManager
 @onready var dungeon: Node2D = $"../Dungeon"
 
 func _physics_process(_delta):
-	SPEED = player_manager.player_speed
+	SPEED = PlayerStats.player_speed
 	input_direction = get_input()
 	if Input.is_action_pressed("Move"):
 		play_animations(input_direction)
