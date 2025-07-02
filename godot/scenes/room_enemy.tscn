@@ -1,0 +1,76 @@
+[gd_scene load_steps=15 format=3 uid="uid://13rvogud7rsa"]
+
+[ext_resource type="Texture2D" uid="uid://ju3diwiys61m" path="res://assets/Backgrounds/Background_Backstage.png" id="1_clddj"]
+[ext_resource type="Script" uid="uid://byci1k0hhdnk6" path="res://scripts/room_enemy.gd" id="2_pxxvc"]
+[ext_resource type="PackedScene" uid="uid://cw38s58m0ds5a" path="res://scenes/door.tscn" id="3_lpp2x"]
+[ext_resource type="PackedScene" uid="uid://c8s16kxmcaiqy" path="res://scenes/items/amp.tscn" id="4_4x2la"]
+[ext_resource type="Script" uid="uid://dp47vieyolbw2" path="res://scripts/enemy_spawner.gd" id="4_pxxvc"]
+[ext_resource type="PackedScene" uid="uid://cggrbt4ef8w6j" path="res://scenes/items/cassette.tscn" id="5_fwfs1"]
+[ext_resource type="PackedScene" uid="uid://b2nk7g8t2gb86" path="res://scenes/annoying_fan.tscn" id="5_lpp2x"]
+[ext_resource type="PackedScene" uid="uid://d3hfiro18g8jv" path="res://scenes/items/disc.tscn" id="6_nye40"]
+[ext_resource type="PackedScene" uid="uid://co020ilonm648" path="res://scenes/items/headphones.tscn" id="7_pn8hq"]
+[ext_resource type="PackedScene" uid="uid://dtfqpbu7ap45v" path="res://scenes/items/radio.tscn" id="8_rpitk"]
+[ext_resource type="PackedScene" uid="uid://b4we81q1bbplm" path="res://scenes/items/vinyl.tscn" id="9_vprdr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_85yof"]
+size = Vector2(63.375, 360.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_14vil"]
+size = Vector2(359, 63)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lpp2x"]
+size = Vector2(230, 230)
+
+[node name="Room" type="Sprite2D"]
+texture = ExtResource("1_clddj")
+script = ExtResource("2_pxxvc")
+_door_scene = ExtResource("3_lpp2x")
+_drops = Array[PackedScene]([ExtResource("4_4x2la"), ExtResource("5_fwfs1"), ExtResource("6_nye40"), ExtResource("7_pn8hq"), ExtResource("8_rpitk"), ExtResource("9_vprdr")])
+
+[node name="Left" type="StaticBody2D" parent="."]
+collision_mask = 22
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Left"]
+position = Vector2(-148, 0)
+shape = SubResource("RectangleShape2D_85yof")
+
+[node name="Top" type="StaticBody2D" parent="."]
+collision_mask = 22
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Top"]
+position = Vector2(-0.5, -148.5)
+shape = SubResource("RectangleShape2D_14vil")
+
+[node name="Bottom" type="StaticBody2D" parent="."]
+collision_mask = 22
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Bottom"]
+position = Vector2(5.73712e-08, 147.688)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_85yof")
+
+[node name="Right" type="StaticBody2D" parent="."]
+collision_mask = 22
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Right"]
+position = Vector2(148, 0)
+shape = SubResource("RectangleShape2D_85yof")
+
+[node name="Spawner" type="Node2D" parent="."]
+position = Vector2(-35, -28)
+script = ExtResource("4_pxxvc")
+_enemies = Array[PackedScene]([null, ExtResource("5_lpp2x")])
+
+[node name="Spawner2" type="Node2D" parent="."]
+position = Vector2(26, 23)
+script = ExtResource("4_pxxvc")
+_enemies = Array[PackedScene]([null, ExtResource("5_lpp2x")])
+
+[node name="Player Detector" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player Detector"]
+shape = SubResource("RectangleShape2D_lpp2x")
+
+[connection signal="body_entered" from="Player Detector" to="." method="_on_player_detector_body_entered"]

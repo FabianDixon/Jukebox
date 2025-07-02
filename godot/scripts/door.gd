@@ -1,16 +1,22 @@
 extends Sprite2D
 @onready var door_area: Area2D = $DoorArea
+var isRoomFinished: bool = true 
 
-var wallNames: Array = ["Left", "Right", "Top", "Bottom"]
-
-@onready var collision_shape: CollisionShape2D = $Door/CollisionShape2D
+@onready var exit_room: Marker2D = $ExitRoom
 
 func _ready():
-	get_parent().connect("isRoomFinished", Callable(self, "_on_isRoomFinished"))
+	Events.connect("EnemyRoomIsFinished", Callable(self, "_on_isRoomFinished"))
+	Events.connect("EnemyRoomEntered", Callable(self, "_on_EnemyRoomEntered"))
+	
 
 func _on_door_area_body_entered(body: Node2D) -> void:
-	if body.name in wallNames:
-		body.queue_free()
+	print(body.name)
+	print(isRoomFinished)
+	if body.name == "Player" && isRoomFinished:
+		body.global_position = exit_room.global_position
 
-func _on_isRoomFinished():
-	collision_shape.set_deferred("disabled", true)
+func _on_isRoomFinished(_room):
+	isRoomFinished = true
+	
+func _on_EnemyRoomEntered(_room):
+	isRoomFinished = false

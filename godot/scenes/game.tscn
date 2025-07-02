@@ -1,36 +1,33 @@
 [gd_scene load_steps=5 format=3 uid="uid://txpyeijm8ugt"]
 
 [ext_resource type="PackedScene" uid="uid://clkaisn8kfb53" path="res://scenes/Player.tscn" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://b7e7d16ggys8" path="res://scripts/camera_2d.gd" id="3_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://csw42ge5i68gk" path="res://scenes/dungeon.tscn" id="4_lbhrr"]
 [ext_resource type="Script" uid="uid://m67exxsfelan" path="res://scripts/HP_Text.gd" id="6_u5sy4"]
-[ext_resource type="PackedScene" uid="uid://b2nk7g8t2gb86" path="res://scenes/annoying_fan.tscn" id="7_u5sy4"]
 
 [node name="Game" type="Node2D"]
 
 [node name="Collectibles" type="Node" parent="."]
 
-[node name="Enemies" type="Node" parent="."]
-
-[node name="AnnoyingFan" parent="Enemies" instance=ExtResource("7_u5sy4")]
-position = Vector2(253, 5)
-
 [node name="Player" parent="." instance=ExtResource("1_uwrxv")]
 position = Vector2(-5, -27)
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-1, -14)
+[node name="Dungeon" parent="." instance=ExtResource("4_lbhrr")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-6, -41)
+offset = Vector2(5.5, 38)
 zoom = Vector2(3, 3)
 limit_smoothed = true
 position_smoothing_enabled = true
+script = ExtResource("3_lbhrr")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Player/Camera2D"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Camera2D"]
 offset_left = -268.0
 offset_top = -181.0
 offset_right = -192.0
 offset_bottom = -135.0
 text = "Hp: "
 script = ExtResource("6_u5sy4")
-
-[node name="Dungeon" parent="." instance=ExtResource("4_lbhrr")]
 
 [connection signal="startRoom" from="Dungeon" to="Player" method="_on_dungeon_start_room"]

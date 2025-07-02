@@ -34,14 +34,17 @@ const ROOM_SIZE_int: Vector2i = Vector2(360, 360)
  
 @export var _dimensions: Vector2i = Vector2i(7, 5)
 @export var _start: Vector2i = Vector2i(-1, 0)
-@export var _critical_path_length: int = 13
+@export var _critical_path_length: int = 8
 @export var _branches: Array[Contents] = []
 @export var _branch_length : Vector2i = Vector2i(1, 4)
-@export var _room_scene : PackedScene
 @export var _room_icons : Array[Texture2D]
+@export var _room_types : Array[PackedScene]
 var _branch_candidates : Array[Vector2i]
 var dungeon : Array
 signal startRoom(startPos: Vector2i)
+
+var _merchant_appeared : bool = false
+var _treasure_appeared : bool = false
  
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("exit"):
@@ -59,7 +62,7 @@ func _clear_dungeon() -> void:
 func _generate_dungeon() -> void:
 	_initialize_dungeon()
 	_place_entrance()
-	_generate_path(_start, _critical_path_length, [Contents.CAMP, Contents.BOSS, Contents.STAIRS])
+	_generate_path(_start, _critical_path_length, [Contents.CAMP, Contents.BOSS])
 	_generate_branches()
 	_print_dungeon()
 	_draw_dungeon()
@@ -91,15 +94,34 @@ func _generate_path(from: Vector2i, length: int, end_of_path: Array[int]) -> boo
 			dungeon[current.x][current.y] |= Doors.values()[random]
 			current += direction
 			dungeon[current.x][current.y] |= Doors.values()[(random + 2) % 4]
+			if  (end_of_path.size() < length) && (length <= end_of_path.size() + 2):
+				if not _merchant_appeared:
+					dungeon[current.x][current.y] |= Contents.MERCHANT
+					_merchant_appeared = true
+				elif not _treasure_appeared:
+					dungeon[current.x][current.y] |= Contents.TREASURE
+					_treasure_appeared = true
+				elif _treasure_appeared && _merchant_appeared :
+					dungeon[current.x][current.y] |= Contents.ENEMY
 			if length <= end_of_path.size():
 				dungeon[current.x][current.y] |= end_of_path[end_of_path.size() - length]
 			else:
 				_branch_candidates.append(current)
 				match randi_range(0, 2):
-					1:
+					0:
 						dungeon[current.x][current.y] |= Contents.ENEMY
+					1:
+						if _merchant_appeared:
+							dungeon[current.x][current.y] |= Contents.ENEMY
+						else:
+							dungeon[current.x][current.y] |= Contents.MERCHANT
+							_merchant_appeared = true
 					2:
-						dungeon[current.x][current.y] |= Contents.RANDOM
+						if _treasure_appeared:
+							dungeon[current.x][current.y] |= Contents.ENEMY
+						else:
+							dungeon[current.x][current.y] |= Contents.TREASURE
+							_treasure_appeared = true
 			if _generate_path(current, length - 1, end_of_path):
 				return true
 			else:
@@ -139,13 +161,18 @@ func _draw_dungeon() -> void:
 	for y in range(_dimensions.y - 1, -1, -1):
 		for x in _dimensions.x:
 			if dungeon[x][y]:
-				room = _room_scene.instantiate()
-				add_child(room)
-				room.position = BOTTOM_LEFT_CORNER + Vector2(x, -y) * ROOM_SIZE
-				for i in Doors.size():
-					if dungeon[x][y] & Doors.values()[i]:
-						room.add_door(i)
-				for i in _room_icons.size():
+				for i in _room_types.size():
 					if dungeon[x][y] & Contents.values()[i]:
-						room.set_icon(_room_icons[i])
+						room = _room_types[i].instantiate()
+						add_child(room)
+						room.position = BOTTOM_LEFT_CORNER + Vector2(x, -y) * ROOM_SIZE
+						if Contents.values()[i] == Contents.ENEMY:
+							room.name = "room_enemy"
+						for d in Doors.size():
+							if dungeon[x][y] & Doors.values()[d]:
+								room.add_door(d)
+						for n in _room_icons.size():
+							if dungeon[x][y] & Contents.values()[n]:
+								room.set_icon(_room_icons[n])
+								break
 						break

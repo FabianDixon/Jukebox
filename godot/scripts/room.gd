@@ -3,9 +3,6 @@ extends Sprite2D
 @export var _door_scene: PackedScene
 signal isRoomFinished()
 
-func _physics_process(_delta):
-	roomFinished()
-
 func add_door(direction: int) -> void:
 	var door: Sprite2D = _door_scene.instantiate()
 	add_child(door)
@@ -20,6 +17,6 @@ func clear_doors() -> void:
 func set_icon(icon: Texture2D) -> void:
 	$Icon.texture = icon
 
-func roomFinished():
-	if Input.is_action_just_pressed("Function"):
-		isRoomFinished.emit()
+func _on_player_detector_body_entered(_body: Node2D) -> void: 
+	Events.room_entered.emit(self)
+	isRoomFinished.emit()
