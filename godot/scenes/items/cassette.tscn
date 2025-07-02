@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cggrbt4ef8w6j"]
+
+[ext_resource type="Script" uid="uid://wmdsyuq1s2u2" path="res://scripts/item.gd" id="1_xtpje"]
+[ext_resource type="Texture2D" uid="uid://bxp0h457fxn0l" path="res://assets/Items/MusicObjects.png" id="2_fhdiy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_di7ju"]
+size = Vector2(18, 12)
+
+[node name="cassette" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_xtpje")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_fhdiy")
+region_enabled = true
+region_rect = Rect2(1, 7, 29, 19)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_di7ju")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
